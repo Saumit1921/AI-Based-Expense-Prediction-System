@@ -1,0 +1,64 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "backend/src/app.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "ai-service/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/predictions/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/auth/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/expenses/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/categories/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/budgets/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/notifications/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/reports/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/api/admin/(.*)",
+      "dest": "backend/src/app.js"
+    },
+    {
+      "src": "/ai/(.*)",
+      "dest": "ai-service/app.py"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "frontend/dist/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/dist/$1"
+    }
+  ]
+}
