@@ -1,0 +1,49 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_stage/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.nuxt/
+.output/
+.svelte-kit/
+
+# Python caching & environments
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+ENV/
+env/
+python/
+.pytest_cache/
+.ipynb_checkpoints/
+models/*.pkl
+models/*.h5
+
+# Prisma and database
+dev.db
+dev.db-journal
+*.log
+uploads/receipts/*
+!uploads/receipts/.gitkeep
+uploads/profile_images/*
+!uploads/profile_images/.gitkeep
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.gemini/
+antigravity-ide/

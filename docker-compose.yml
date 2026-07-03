@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: expense_prediction_db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: expense_tracker
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - expense_network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ../deployment/Dockerfile.backend
+    container_name: expense_prediction_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/expense_tracker?schema=public
+      - JWT_SECRET=super_secret_jwt_token_key_123456
+      - AI_SERVICE_URL=http://ai-service:8000
+      - PORT=5000
+    depends_on:
+      - postgres
+    networks:
+      - expense_network
+
+  ai-service:
+    build:
+      context: ./ai-service
+      dockerfile: ../deployment/Dockerfile.ai
+    container_name: expense_prediction_ai
+    ports:
+      - "8000:8000"
+    networks:
+      - expense_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ../deployment/Dockerfile.frontend
+    container_name: expense_prediction_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - expense_network
+
+volumes:
+  postgres_data:
+
+networks:
+  expense_network:
+    driver: bridge

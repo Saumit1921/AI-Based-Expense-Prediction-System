@@ -1,0 +1,78 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  user_id       String         @id @default(uuid())
+  full_name     String
+  email         String         @unique
+  password      String
+  role          String         @default("USER") // "USER" or "ADMIN"
+  created_at    DateTime       @default(now())
+  
+  expenses      Expense[]
+  budgets       Budget[]
+  predictions   Prediction[]
+  notifications Notification[]
+}
+
+model Category {
+  category_id   String    @id @default(uuid())
+  category_name String    @unique
+  icon          String    // Lucide icon name, e.g. "Utensils"
+  color         String    // Hex code, e.g. "#EF4444"
+  user_id       String?   // Null for system/default categories, otherwise user-specific
+  
+  expenses      Expense[]
+  budgets       Budget[]
+}
+
+model Expense {
+  expense_id     String   @id @default(uuid())
+  user_id        String
+  user           User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  category_id    String
+  category       Category @relation(fields: [category_id], references: [category_id], onDelete: Cascade)
+  amount         Float
+  payment_method String   // "Cash", "Credit Card", "Debit Card", "UPI", "Net Banking"
+  description    String?
+  receipt_url    String?
+  expense_date   DateTime
+  created_at     DateTime @default(now())
+}
+
+model Budget {
+  budget_id     String   @id @default(uuid())
+  user_id       String
+  user          User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  category_id   String
+  category      Category @relation(fields: [category_id], references: [category_id], onDelete: Cascade)
+  monthly_limit Float
+
+  @@unique([user_id, category_id])
+}
+
+model Prediction {
+  prediction_id    String   @id @default(uuid())
+  user_id          String
+  user             User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  prediction_month String   // Format: "YYYY-MM"
+  predicted_amount Float
+  confidence_score Float
+  created_at       DateTime @default(now())
+}
+
+model Notification {
+  notification_id String   @id @default(uuid())
+  user_id         String
+  user            User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  title           String
+  message         String
+  read_status     Boolean  @default(false)
+  created_at      DateTime @default(now())
+}

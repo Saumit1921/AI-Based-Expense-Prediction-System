@@ -1,0 +1,891 @@
+date,category,amount,payment_method,description
+2025-05-01 10:42:00,Travel,2270.71,Cash,Paid for travel
+2025-05-02 19:24:00,Food,293.23,UPI,Paid for food
+2025-05-03 10:53:00,Entertainment,388.91,UPI,Paid for entertainment
+2025-05-03 11:41:00,Transport,151.39,Net Banking,Paid for transport
+2025-05-03 19:58:00,Transport,191.37,Debit Card,Paid for transport
+2025-05-04 19:48:00,Food,527.64,Net Banking,Paid for food
+2025-05-05 00:00:00,Rent,13294.1,Net Banking,Monthly rent payment
+2025-05-05 14:39:00,Transport,243.25,UPI,Paid for transport
+2025-05-05 17:00:00,Food,464.59,Credit Card,Paid for food
+2025-05-06 14:28:00,Medical,1192.59,Debit Card,Paid for medical
+2025-05-07 09:27:00,Investment,5553.21,UPI,Paid for investment
+2025-05-07 18:56:00,Food,584.4,Cash,Paid for food
+2025-05-09 13:18:00,Food,280.05,Credit Card,Paid for food
+2025-05-09 16:04:00,Food,626.38,UPI,Paid for food
+2025-05-13 09:08:00,Shopping,1661.27,Net Banking,Paid for shopping
+2025-05-13 16:11:00,Others,829.93,Net Banking,Paid for others
+2025-05-13 21:59:00,Transport,262.51,Net Banking,Paid for transport
+2025-05-14 09:13:00,Food,601.6,UPI,Paid for food
+2025-05-14 11:47:00,Bills,1359.37,Debit Card,Paid for bills
+2025-05-14 12:45:00,Food,751.41,Net Banking,Paid for food
+2025-05-14 22:01:00,Education,4724.71,Cash,Paid for education
+2025-05-14 22:39:00,Transport,261.86,Debit Card,Paid for transport
+2025-05-15 11:03:00,Entertainment,1087.08,UPI,Paid for entertainment
+2025-05-15 13:48:00,Shopping,3621.35,Net Banking,Paid for shopping
+2025-05-15 14:41:00,Food,647.98,Debit Card,Paid for food
+2025-05-15 16:24:00,Transport,295.77,UPI,Paid for transport
+2025-05-15 16:24:00,Entertainment,1046.2,Debit Card,Paid for entertainment
+2025-05-15 17:15:00,Transport,172.06,Cash,Paid for transport
+2025-05-16 14:19:00,Transport,80.46,Credit Card,Paid for transport
+2025-05-16 21:34:00,Transport,202.31,Cash,Paid for transport
+2025-05-17 09:10:00,Investment,8563.58,Credit Card,Paid for investment
+2025-05-18 14:54:00,Transport,99.51,Debit Card,Paid for transport
+2025-05-18 18:30:00,Bills,1472.14,Net Banking,Paid for bills
+2025-05-19 22:30:00,Food,327.79,Debit Card,Paid for food
+2025-05-20 13:42:00,Entertainment,323.16,UPI,Paid for entertainment
+2025-05-20 16:46:00,Food,436.87,Debit Card,Paid for food
+2025-05-20 20:09:00,Food,427.45,UPI,Paid for food
+2025-05-22 12:21:00,Transport,188.21,UPI,Paid for transport
+2025-05-22 12:48:00,Food,391.53,Credit Card,Paid for food
+2025-05-22 17:43:00,Shopping,2300.1,Debit Card,Paid for shopping
+2025-05-23 12:27:00,Food,164.97,Net Banking,Paid for food
+2025-05-23 16:44:00,Others,666.34,Cash,Paid for others
+2025-05-23 19:45:00,Food,375.35,Credit Card,Paid for food
+2025-05-24 11:06:00,Food,610.97,Net Banking,Paid for food
+2025-05-24 14:36:00,Food,482.85,Cash,Paid for food
+2025-05-25 14:20:00,Food,128.73,Net Banking,Paid for food
+2025-05-25 18:01:00,Transport,144.27,UPI,Paid for transport
+2025-05-26 10:11:00,Others,758.32,Cash,Paid for others
+2025-05-28 09:19:00,Food,755.78,Cash,Paid for food
+2025-05-28 12:47:00,Transport,223.87,Credit Card,Paid for transport
+2025-05-28 22:35:00,Food,455.81,Net Banking,Paid for food
+2025-05-29 17:49:00,Food,190.88,Cash,Paid for food
+2025-05-29 19:43:00,Food,134.98,Cash,Paid for food
+2025-05-30 14:18:00,Others,533.14,Net Banking,Paid for others
+2025-05-30 14:47:00,Food,173.67,Cash,Paid for food
+2025-05-30 17:41:00,Food,483.15,Cash,Paid for food
+2025-05-31 08:07:00,Entertainment,1452.3,Cash,Paid for entertainment
+2025-05-31 08:45:00,Shopping,3649.75,Net Banking,Paid for shopping
+2025-05-31 12:58:00,Transport,187.18,Debit Card,Paid for transport
+2025-05-31 20:55:00,Bills,2505.98,Debit Card,Paid for bills
+2025-06-01 10:09:00,Food,166.19,Net Banking,Paid for food
+2025-06-01 12:28:00,Food,473.91,Debit Card,Paid for food
+2025-06-01 20:58:00,Transport,249.41,Cash,Paid for transport
+2025-06-01 22:21:00,Food,551.09,Cash,Paid for food
+2025-06-02 09:44:00,Food,340.53,UPI,Paid for food
+2025-06-02 11:32:00,Bills,2366.13,Net Banking,Paid for bills
+2025-06-02 12:28:00,Transport,66.3,Debit Card,Paid for transport
+2025-06-02 13:31:00,Transport,156.42,Debit Card,Paid for transport
+2025-06-02 13:58:00,Food,558.95,Cash,Paid for food
+2025-06-03 09:53:00,Transport,157.76,Credit Card,Paid for transport
+2025-06-03 12:56:00,Bills,1355.7,Net Banking,Paid for bills
+2025-06-03 13:34:00,Investment,2056.96,Debit Card,Paid for investment
+2025-06-04 00:00:00,Rent,17058.98,Net Banking,Monthly rent payment
+2025-06-04 09:10:00,Food,633.75,Credit Card,Paid for food
+2025-06-04 10:23:00,Bills,4613.46,UPI,Paid for bills
+2025-06-04 10:54:00,Others,939.98,Debit Card,Paid for others
+2025-06-04 21:26:00,Entertainment,1456.1,Cash,Paid for entertainment
+2025-06-05 09:18:00,Others,859.74,Debit Card,Paid for others
+2025-06-05 12:15:00,Food,351.35,Net Banking,Paid for food
+2025-06-07 08:24:00,Transport,266.11,Credit Card,Paid for transport
+2025-06-07 09:52:00,Medical,1964.9,Debit Card,Paid for medical
+2025-06-07 10:54:00,Food,310.77,UPI,Paid for food
+2025-06-07 20:22:00,Others,566.53,Net Banking,Paid for others
+2025-06-07 20:45:00,Others,590.49,Cash,Paid for others
+2025-06-08 08:38:00,Transport,113.75,UPI,Paid for transport
+2025-06-08 09:39:00,Transport,110.83,Net Banking,Paid for transport
+2025-06-08 18:09:00,Transport,185.1,Debit Card,Paid for transport
+2025-06-08 19:59:00,Food,252.01,Credit Card,Paid for food
+2025-06-08 20:43:00,Shopping,1736.54,Debit Card,Paid for shopping
+2025-06-09 08:21:00,Food,727.06,Net Banking,Paid for food
+2025-06-10 13:06:00,Transport,133.3,Cash,Paid for transport
+2025-06-12 12:19:00,Investment,9369.47,Cash,Paid for investment
+2025-06-12 19:35:00,Food,587.44,Cash,Paid for food
+2025-06-13 09:40:00,Shopping,2396.23,Cash,Paid for shopping
+2025-06-13 13:36:00,Food,748.37,Debit Card,Paid for food
+2025-06-14 08:42:00,Food,351.39,Debit Card,Paid for food
+2025-06-14 09:25:00,Food,227.66,Debit Card,Paid for food
+2025-06-14 18:43:00,Entertainment,991.41,Cash,Paid for entertainment
+2025-06-15 13:20:00,Entertainment,1403.24,Net Banking,Paid for entertainment
+2025-06-15 13:54:00,Food,600.99,Cash,Paid for food
+2025-06-15 18:46:00,Shopping,910.5,Cash,Paid for shopping
+2025-06-15 19:04:00,Food,743.36,Credit Card,Paid for food
+2025-06-15 21:38:00,Food,316.15,UPI,Paid for food
+2025-06-16 12:42:00,Others,954.1,Cash,Paid for others
+2025-06-17 16:28:00,Food,116.02,Debit Card,Paid for food
+2025-06-18 15:32:00,Food,233.75,Net Banking,Paid for food
+2025-06-18 17:07:00,Food,670.91,UPI,Paid for food
+2025-06-20 19:14:00,Food,502.66,UPI,Paid for food
+2025-06-21 16:02:00,Transport,237.14,Debit Card,Paid for transport
+2025-06-21 21:54:00,Food,327.81,Cash,Paid for food
+2025-06-22 10:42:00,Transport,271.16,UPI,Paid for transport
+2025-06-22 18:02:00,Food,115.99,Debit Card,Paid for food
+2025-06-22 18:27:00,Transport,258.68,UPI,Paid for transport
+2025-06-23 13:42:00,Entertainment,207.24,Cash,Paid for entertainment
+2025-06-23 15:57:00,Travel,5502.6,UPI,Paid for travel
+2025-06-24 09:44:00,Shopping,2417.46,Debit Card,Paid for shopping
+2025-06-24 17:43:00,Transport,125.07,Cash,Paid for transport
+2025-06-25 19:38:00,Entertainment,607.8,Net Banking,Paid for entertainment
+2025-06-26 18:26:00,Food,317.23,Credit Card,Paid for food
+2025-06-27 16:08:00,Food,751.02,Debit Card,Paid for food
+2025-06-28 12:42:00,Transport,156.27,Credit Card,Paid for transport
+2025-06-28 13:58:00,Transport,271.57,Net Banking,Paid for transport
+2025-06-28 17:30:00,Food,542.73,UPI,Paid for food
+2025-06-28 19:07:00,Food,522.4,Net Banking,Paid for food
+2025-06-28 20:20:00,Transport,57.72,UPI,Paid for transport
+2025-06-29 09:55:00,Entertainment,827.23,UPI,Paid for entertainment
+2025-06-29 18:10:00,Food,316.55,Net Banking,Paid for food
+2025-06-29 18:57:00,Education,1410.59,Cash,Paid for education
+2025-06-30 17:24:00,Transport,152.42,Cash,Paid for transport
+2025-06-30 18:33:00,Food,530.16,UPI,Paid for food
+2025-07-01 08:29:00,Others,670.42,UPI,Paid for others
+2025-07-01 22:19:00,Investment,3743.58,Credit Card,Paid for investment
+2025-07-02 15:25:00,Food,609.06,Cash,Paid for food
+2025-07-02 21:54:00,Entertainment,1353.87,Credit Card,Paid for entertainment
+2025-07-03 19:15:00,Transport,90.95,Debit Card,Paid for transport
+2025-07-03 20:33:00,Transport,76.91,Credit Card,Paid for transport
+2025-07-04 11:39:00,Transport,59.04,Credit Card,Paid for transport
+2025-07-04 14:12:00,Food,187.09,Cash,Paid for food
+2025-07-04 19:09:00,Food,207.33,UPI,Paid for food
+2025-07-05 00:00:00,Rent,14023.54,Net Banking,Monthly rent payment
+2025-07-05 09:33:00,Bills,3203.66,UPI,Paid for bills
+2025-07-05 22:57:00,Transport,230.57,Credit Card,Paid for transport
+2025-07-07 11:42:00,Food,692.27,Credit Card,Paid for food
+2025-07-07 13:08:00,Food,775.06,UPI,Paid for food
+2025-07-07 13:12:00,Entertainment,372.82,UPI,Paid for entertainment
+2025-07-07 14:44:00,Transport,114.79,Cash,Paid for transport
+2025-07-07 18:02:00,Food,435.7,Credit Card,Paid for food
+2025-07-07 19:35:00,Food,664.1,Net Banking,Paid for food
+2025-07-08 10:16:00,Others,573.74,UPI,Paid for others
+2025-07-08 22:54:00,Food,297.46,UPI,Paid for food
+2025-07-09 08:18:00,Food,677.7,Cash,Paid for food
+2025-07-09 17:06:00,Food,468.83,Credit Card,Paid for food
+2025-07-09 18:22:00,Transport,101.38,Cash,Paid for transport
+2025-07-10 16:06:00,Food,505.18,Cash,Paid for food
+2025-07-11 11:27:00,Food,246.74,Cash,Paid for food
+2025-07-11 14:22:00,Food,573.9,Cash,Paid for food
+2025-07-11 14:36:00,Transport,103.56,Cash,Paid for transport
+2025-07-11 21:09:00,Food,319.69,UPI,Paid for food
+2025-07-12 12:12:00,Transport,150.14,Net Banking,Paid for transport
+2025-07-12 22:18:00,Entertainment,700.38,Debit Card,Paid for entertainment
+2025-07-14 19:29:00,Shopping,1756.36,Debit Card,Paid for shopping
+2025-07-14 22:34:00,Food,718.61,UPI,Paid for food
+2025-07-15 14:24:00,Shopping,2249.74,Net Banking,Paid for shopping
+2025-07-15 20:46:00,Entertainment,1073.01,Debit Card,Paid for entertainment
+2025-07-16 18:12:00,Transport,273.74,Cash,Paid for transport
+2025-07-17 21:46:00,Food,613.47,UPI,Paid for food
+2025-07-18 11:53:00,Shopping,2668.41,Cash,Paid for shopping
+2025-07-18 17:48:00,Food,677.61,Credit Card,Paid for food
+2025-07-19 12:31:00,Bills,2646.5,Cash,Paid for bills
+2025-07-20 20:56:00,Bills,1849.91,Net Banking,Paid for bills
+2025-07-20 22:35:00,Others,981.42,Credit Card,Paid for others
+2025-07-21 10:43:00,Food,467.51,Cash,Paid for food
+2025-07-21 11:01:00,Food,321.48,Debit Card,Paid for food
+2025-07-21 17:22:00,Food,689.62,Credit Card,Paid for food
+2025-07-22 09:30:00,Food,797.82,Credit Card,Paid for food
+2025-07-22 20:53:00,Transport,195.95,Credit Card,Paid for transport
+2025-07-22 21:49:00,Transport,239.82,UPI,Paid for transport
+2025-07-23 10:25:00,Food,785.29,UPI,Paid for food
+2025-07-24 15:45:00,Food,226.56,UPI,Paid for food
+2025-07-24 17:00:00,Food,427.24,Debit Card,Paid for food
+2025-07-24 22:15:00,Food,200.23,Net Banking,Paid for food
+2025-07-24 22:56:00,Investment,9436.76,Cash,Paid for investment
+2025-07-25 14:18:00,Education,1528.45,Credit Card,Paid for education
+2025-07-25 19:49:00,Entertainment,1130.27,Debit Card,Paid for entertainment
+2025-07-26 12:01:00,Medical,618.43,Debit Card,Paid for medical
+2025-07-27 11:02:00,Transport,82.27,Net Banking,Paid for transport
+2025-07-28 18:37:00,Others,376.48,Credit Card,Paid for others
+2025-07-28 18:39:00,Food,102.96,Debit Card,Paid for food
+2025-07-28 19:36:00,Food,545.09,Net Banking,Paid for food
+2025-07-28 22:51:00,Food,146.55,Credit Card,Paid for food
+2025-07-31 11:34:00,Shopping,2144.76,Net Banking,Paid for shopping
+2025-07-31 11:49:00,Food,119.05,Net Banking,Paid for food
+2025-07-31 17:12:00,Food,632.12,Debit Card,Paid for food
+2025-07-31 17:29:00,Travel,2672.17,UPI,Paid for travel
+2025-08-01 16:43:00,Investment,5090.35,Cash,Paid for investment
+2025-08-01 17:55:00,Entertainment,1098.05,Cash,Paid for entertainment
+2025-08-01 18:27:00,Transport,223.31,Cash,Paid for transport
+2025-08-02 08:55:00,Bills,1542.86,UPI,Paid for bills
+2025-08-02 12:27:00,Transport,68.27,UPI,Paid for transport
+2025-08-02 14:34:00,Food,470.97,Cash,Paid for food
+2025-08-02 19:51:00,Transport,224.88,Cash,Paid for transport
+2025-08-03 00:00:00,Rent,16515.65,Net Banking,Monthly rent payment
+2025-08-03 15:49:00,Others,276.7,UPI,Paid for others
+2025-08-03 16:00:00,Transport,158.82,Credit Card,Paid for transport
+2025-08-03 19:16:00,Entertainment,283.72,UPI,Paid for entertainment
+2025-08-03 21:38:00,Food,613.25,Debit Card,Paid for food
+2025-08-04 08:11:00,Transport,116.55,Credit Card,Paid for transport
+2025-08-04 16:08:00,Food,192.2,Debit Card,Paid for food
+2025-08-05 10:34:00,Bills,3799.7,Net Banking,Paid for bills
+2025-08-05 22:22:00,Food,730.05,Cash,Paid for food
+2025-08-06 08:45:00,Transport,271.09,UPI,Paid for transport
+2025-08-06 15:02:00,Food,123.99,Credit Card,Paid for food
+2025-08-07 09:59:00,Food,337.77,Credit Card,Paid for food
+2025-08-07 11:20:00,Travel,2509.05,Net Banking,Paid for travel
+2025-08-07 22:25:00,Transport,189.28,Debit Card,Paid for transport
+2025-08-08 14:23:00,Transport,83.55,Cash,Paid for transport
+2025-08-08 16:12:00,Transport,256.1,Net Banking,Paid for transport
+2025-08-09 11:06:00,Medical,807.7,Cash,Paid for medical
+2025-08-09 20:30:00,Others,331.81,Net Banking,Paid for others
+2025-08-10 11:17:00,Food,179.82,Net Banking,Paid for food
+2025-08-10 17:36:00,Food,509.17,Cash,Paid for food
+2025-08-10 19:25:00,Food,151.11,Credit Card,Paid for food
+2025-08-10 19:45:00,Shopping,3376.07,Net Banking,Paid for shopping
+2025-08-10 20:43:00,Food,465.44,Cash,Paid for food
+2025-08-11 10:20:00,Food,416.11,Net Banking,Paid for food
+2025-08-12 20:02:00,Transport,196.67,UPI,Paid for transport
+2025-08-12 21:11:00,Transport,273.68,UPI,Paid for transport
+2025-08-14 13:47:00,Food,183.2,Net Banking,Paid for food
+2025-08-14 15:51:00,Shopping,536.79,UPI,Paid for shopping
+2025-08-14 21:19:00,Food,668.23,Net Banking,Paid for food
+2025-08-15 17:29:00,Transport,296.74,Cash,Paid for transport
+2025-08-16 08:50:00,Others,110.58,Net Banking,Paid for others
+2025-08-16 09:28:00,Entertainment,305.39,UPI,Paid for entertainment
+2025-08-16 10:12:00,Entertainment,870.42,Net Banking,Paid for entertainment
+2025-08-16 16:52:00,Food,570.28,Debit Card,Paid for food
+2025-08-18 09:34:00,Food,353.02,Net Banking,Paid for food
+2025-08-18 09:58:00,Food,353.52,Cash,Paid for food
+2025-08-18 19:32:00,Entertainment,316.8,UPI,Paid for entertainment
+2025-08-20 09:31:00,Others,789.1,Net Banking,Paid for others
+2025-08-20 12:33:00,Food,456.23,Cash,Paid for food
+2025-08-20 15:35:00,Investment,3028.78,Credit Card,Paid for investment
+2025-08-21 15:42:00,Food,375.53,Cash,Paid for food
+2025-08-22 11:49:00,Shopping,890.37,Credit Card,Paid for shopping
+2025-08-23 11:41:00,Bills,4060.66,Debit Card,Paid for bills
+2025-08-23 12:15:00,Transport,193.99,Net Banking,Paid for transport
+2025-08-25 12:44:00,Food,338.16,UPI,Paid for food
+2025-08-26 18:52:00,Education,3583.47,UPI,Paid for education
+2025-08-26 19:30:00,Transport,150.98,Credit Card,Paid for transport
+2025-08-27 16:22:00,Transport,232.92,Cash,Paid for transport
+2025-08-28 09:30:00,Food,768.75,Debit Card,Paid for food
+2025-08-28 21:53:00,Food,400.21,Cash,Paid for food
+2025-08-29 16:54:00,Entertainment,1093.32,Cash,Paid for entertainment
+2025-08-30 11:13:00,Shopping,1739.78,Cash,Paid for shopping
+2025-09-01 08:04:00,Food,612.02,Debit Card,Paid for food
+2025-09-01 15:27:00,Food,650.32,UPI,Paid for food
+2025-09-01 21:25:00,Investment,2552.89,Debit Card,Paid for investment
+2025-09-02 09:13:00,Transport,255.62,Debit Card,Paid for transport
+2025-09-02 22:54:00,Entertainment,867.75,UPI,Paid for entertainment
+2025-09-03 09:55:00,Entertainment,350.95,Debit Card,Paid for entertainment
+2025-09-03 12:06:00,Food,169.23,Credit Card,Paid for food
+2025-09-03 18:35:00,Food,438.25,Net Banking,Paid for food
+2025-09-04 08:47:00,Food,431.16,UPI,Paid for food
+2025-09-04 09:19:00,Food,479.9,Debit Card,Paid for food
+2025-09-04 16:56:00,Shopping,3790.04,Debit Card,Paid for shopping
+2025-09-04 22:17:00,Food,478.55,UPI,Paid for food
+2025-09-05 00:00:00,Rent,17853.28,Net Banking,Monthly rent payment
+2025-09-05 11:55:00,Food,748.79,Credit Card,Paid for food
+2025-09-05 13:31:00,Food,378.02,Credit Card,Paid for food
+2025-09-06 19:04:00,Transport,143.77,UPI,Paid for transport
+2025-09-06 22:35:00,Food,302.36,UPI,Paid for food
+2025-09-07 11:23:00,Transport,184.23,Credit Card,Paid for transport
+2025-09-07 16:56:00,Transport,136.09,Cash,Paid for transport
+2025-09-07 17:20:00,Transport,217.46,Net Banking,Paid for transport
+2025-09-07 19:32:00,Transport,275.11,Credit Card,Paid for transport
+2025-09-09 15:04:00,Others,974.59,Debit Card,Paid for others
+2025-09-10 16:18:00,Investment,8060.11,Cash,Paid for investment
+2025-09-10 22:17:00,Transport,295.8,Credit Card,Paid for transport
+2025-09-11 18:34:00,Food,445.96,Cash,Paid for food
+2025-09-12 09:30:00,Others,426.41,Cash,Paid for others
+2025-09-12 10:40:00,Transport,137.25,UPI,Paid for transport
+2025-09-12 13:40:00,Food,816.05,Cash,Paid for food
+2025-09-12 16:00:00,Transport,151.12,UPI,Paid for transport
+2025-09-12 20:09:00,Transport,140.98,Credit Card,Paid for transport
+2025-09-12 21:40:00,Food,803.59,UPI,Paid for food
+2025-09-12 21:43:00,Food,614.83,Cash,Paid for food
+2025-09-13 18:10:00,Transport,299.92,Net Banking,Paid for transport
+2025-09-13 18:48:00,Entertainment,1494.71,Cash,Paid for entertainment
+2025-09-14 11:02:00,Entertainment,957.44,UPI,Paid for entertainment
+2025-09-14 12:08:00,Transport,113.83,UPI,Paid for transport
+2025-09-14 12:54:00,Transport,108.16,Cash,Paid for transport
+2025-09-14 15:31:00,Food,318.45,Credit Card,Paid for food
+2025-09-14 22:48:00,Food,126.23,Debit Card,Paid for food
+2025-09-16 16:59:00,Shopping,783.01,UPI,Paid for shopping
+2025-09-16 17:59:00,Entertainment,291.09,Net Banking,Paid for entertainment
+2025-09-17 11:28:00,Food,311.92,Credit Card,Paid for food
+2025-09-18 22:51:00,Transport,173.15,UPI,Paid for transport
+2025-09-19 16:13:00,Others,372.16,UPI,Paid for others
+2025-09-19 17:27:00,Medical,466.5,UPI,Paid for medical
+2025-09-20 20:47:00,Others,646.0,Cash,Paid for others
+2025-09-21 13:26:00,Others,170.48,Credit Card,Paid for others
+2025-09-22 11:06:00,Food,249.24,Cash,Paid for food
+2025-09-22 18:24:00,Food,691.4,Debit Card,Paid for food
+2025-09-22 21:33:00,Food,454.98,Credit Card,Paid for food
+2025-09-23 17:03:00,Food,612.13,Credit Card,Paid for food
+2025-09-24 10:30:00,Food,235.64,Credit Card,Paid for food
+2025-09-25 09:43:00,Transport,141.73,UPI,Paid for transport
+2025-09-25 09:45:00,Transport,268.97,Net Banking,Paid for transport
+2025-09-25 15:37:00,Education,4225.42,Cash,Paid for education
+2025-09-26 14:38:00,Shopping,3251.6,Debit Card,Paid for shopping
+2025-09-27 10:15:00,Bills,2204.9,Cash,Paid for bills
+2025-09-27 20:09:00,Bills,2400.36,Cash,Paid for bills
+2025-09-28 10:21:00,Bills,3064.1,Credit Card,Paid for bills
+2025-09-28 15:29:00,Shopping,712.96,Credit Card,Paid for shopping
+2025-09-28 16:22:00,Food,477.69,Cash,Paid for food
+2025-09-28 18:06:00,Transport,139.93,Net Banking,Paid for transport
+2025-09-29 13:53:00,Transport,202.1,Credit Card,Paid for transport
+2025-09-30 11:12:00,Travel,3112.81,Cash,Paid for travel
+2025-09-30 18:03:00,Food,569.6,Cash,Paid for food
+2025-10-02 14:08:00,Food,535.85,Cash,Paid for food
+2025-10-02 21:41:00,Food,284.27,Debit Card,Paid for food
+2025-10-03 08:34:00,Transport,75.78,Net Banking,Paid for transport
+2025-10-03 19:22:00,Investment,3042.15,Debit Card,Paid for investment
+2025-10-04 00:00:00,Rent,14338.14,Net Banking,Monthly rent payment
+2025-10-04 12:10:00,Food,754.65,UPI,Paid for food
+2025-10-05 08:46:00,Transport,176.97,Net Banking,Paid for transport
+2025-10-05 15:15:00,Entertainment,763.92,Debit Card,Paid for entertainment
+2025-10-05 15:29:00,Food,258.59,Debit Card,Paid for food
+2025-10-05 18:31:00,Entertainment,539.62,UPI,Paid for entertainment
+2025-10-06 11:23:00,Others,290.37,UPI,Paid for others
+2025-10-06 12:40:00,Food,713.53,Cash,Paid for food
+2025-10-06 14:45:00,Entertainment,1346.23,Credit Card,Paid for entertainment
+2025-10-06 17:07:00,Food,553.08,UPI,Paid for food
+2025-10-06 18:34:00,Food,269.86,Net Banking,Paid for food
+2025-10-06 18:37:00,Others,346.34,Debit Card,Paid for others
+2025-10-07 17:36:00,Food,782.03,Net Banking,Paid for food
+2025-10-09 08:13:00,Others,716.75,Cash,Paid for others
+2025-10-09 20:38:00,Food,134.62,UPI,Paid for food
+2025-10-10 08:02:00,Food,393.67,Debit Card,Paid for food
+2025-10-10 16:25:00,Food,157.61,Cash,Paid for food
+2025-10-10 20:19:00,Transport,155.03,UPI,Paid for transport
+2025-10-10 21:05:00,Food,816.0,Debit Card,Paid for food
+2025-10-10 21:11:00,Food,714.15,Net Banking,Paid for food
+2025-10-11 21:38:00,Food,643.37,Debit Card,Paid for food
+2025-10-11 22:28:00,Entertainment,688.51,Cash,Paid for entertainment
+2025-10-12 08:04:00,Transport,238.17,Net Banking,Paid for transport
+2025-10-14 11:38:00,Shopping,1655.34,UPI,Paid for shopping
+2025-10-14 16:41:00,Others,140.08,Net Banking,Paid for others
+2025-10-14 20:11:00,Food,596.72,Net Banking,Paid for food
+2025-10-15 11:48:00,Transport,189.81,Cash,Paid for transport
+2025-10-15 20:30:00,Others,946.54,Credit Card,Paid for others
+2025-10-16 17:01:00,Shopping,2677.17,Cash,Paid for shopping
+2025-10-16 17:20:00,Food,343.51,Credit Card,Paid for food
+2025-10-17 13:09:00,Shopping,953.45,Net Banking,Paid for shopping
+2025-10-17 13:17:00,Others,266.27,UPI,Paid for others
+2025-10-18 16:24:00,Bills,3039.26,UPI,Paid for bills
+2025-10-19 13:11:00,Entertainment,798.88,Net Banking,Paid for entertainment
+2025-10-19 14:26:00,Transport,118.1,Cash,Paid for transport
+2025-10-20 12:59:00,Food,744.69,Cash,Paid for food
+2025-10-21 08:16:00,Food,816.83,Cash,Paid for food
+2025-10-21 12:41:00,Transport,73.0,Cash,Paid for transport
+2025-10-21 16:13:00,Transport,242.43,Credit Card,Paid for transport
+2025-10-21 20:17:00,Bills,1456.02,UPI,Paid for bills
+2025-10-22 08:26:00,Transport,54.9,Credit Card,Paid for transport
+2025-10-22 10:31:00,Bills,2922.12,Credit Card,Paid for bills
+2025-10-22 11:26:00,Travel,2715.24,Credit Card,Paid for travel
+2025-10-22 15:31:00,Shopping,4109.4,Debit Card,Paid for shopping
+2025-10-24 16:25:00,Investment,5029.17,UPI,Paid for investment
+2025-10-25 22:31:00,Food,110.5,Cash,Paid for food
+2025-10-26 18:58:00,Food,713.89,Credit Card,Paid for food
+2025-10-26 19:35:00,Food,220.19,Credit Card,Paid for food
+2025-10-28 10:02:00,Transport,286.86,Credit Card,Paid for transport
+2025-10-28 17:19:00,Entertainment,1199.21,UPI,Paid for entertainment
+2025-10-28 17:28:00,Medical,1172.41,UPI,Paid for medical
+2025-10-28 20:19:00,Transport,128.56,UPI,Paid for transport
+2025-10-29 22:57:00,Transport,117.87,UPI,Paid for transport
+2025-10-31 16:27:00,Food,290.18,UPI,Paid for food
+2025-10-31 21:21:00,Education,3510.96,Net Banking,Paid for education
+2025-11-01 15:26:00,Food,397.5,Net Banking,Paid for food
+2025-11-02 15:20:00,Travel,7787.92,UPI,Paid for travel
+2025-11-02 18:50:00,Shopping,3910.59,Credit Card,Paid for shopping
+2025-11-02 19:10:00,Entertainment,1179.54,Credit Card,Paid for entertainment
+2025-11-03 08:42:00,Transport,256.47,Debit Card,Paid for transport
+2025-11-03 12:10:00,Food,784.4,UPI,Paid for food
+2025-11-04 09:11:00,Food,437.27,UPI,Paid for food
+2025-11-04 13:44:00,Investment,10111.56,UPI,Paid for investment
+2025-11-04 19:02:00,Shopping,2011.34,Net Banking,Paid for shopping
+2025-11-05 00:00:00,Rent,13098.03,Net Banking,Monthly rent payment
+2025-11-05 08:13:00,Food,184.01,Net Banking,Paid for food
+2025-11-05 18:27:00,Investment,3577.64,Credit Card,Paid for investment
+2025-11-06 09:52:00,Others,158.4,Net Banking,Paid for others
+2025-11-06 10:11:00,Shopping,3271.16,UPI,Paid for shopping
+2025-11-06 10:56:00,Food,573.72,Cash,Paid for food
+2025-11-06 13:59:00,Transport,271.95,Cash,Paid for transport
+2025-11-06 20:26:00,Transport,101.09,Cash,Paid for transport
+2025-11-07 10:23:00,Transport,86.78,UPI,Paid for transport
+2025-11-08 21:46:00,Food,626.12,UPI,Paid for food
+2025-11-09 15:35:00,Food,808.58,Net Banking,Paid for food
+2025-11-09 16:48:00,Transport,164.79,Net Banking,Paid for transport
+2025-11-10 16:25:00,Medical,2271.84,Cash,Paid for medical
+2025-11-10 20:30:00,Others,273.44,Net Banking,Paid for others
+2025-11-11 08:15:00,Food,825.51,Debit Card,Paid for food
+2025-11-13 18:26:00,Entertainment,706.06,Cash,Paid for entertainment
+2025-11-15 13:27:00,Others,516.2,UPI,Paid for others
+2025-11-17 17:50:00,Transport,176.73,Cash,Paid for transport
+2025-11-17 19:11:00,Transport,311.94,UPI,Paid for transport
+2025-11-18 11:11:00,Others,153.03,Credit Card,Paid for others
+2025-11-18 20:53:00,Entertainment,438.57,Cash,Paid for entertainment
+2025-11-19 11:11:00,Food,482.22,Net Banking,Paid for food
+2025-11-19 18:07:00,Transport,206.59,Debit Card,Paid for transport
+2025-11-19 21:11:00,Bills,2908.41,Credit Card,Paid for bills
+2025-11-20 08:53:00,Food,375.46,Debit Card,Paid for food
+2025-11-20 09:18:00,Food,643.69,Net Banking,Paid for food
+2025-11-20 10:08:00,Transport,301.16,UPI,Paid for transport
+2025-11-20 12:36:00,Food,449.67,Debit Card,Paid for food
+2025-11-22 15:37:00,Food,504.62,Net Banking,Paid for food
+2025-11-22 16:54:00,Transport,155.81,Net Banking,Paid for transport
+2025-11-22 20:46:00,Food,743.38,Debit Card,Paid for food
+2025-11-22 21:33:00,Food,451.6,UPI,Paid for food
+2025-11-23 08:42:00,Food,276.13,Cash,Paid for food
+2025-11-23 11:20:00,Bills,2888.91,Cash,Paid for bills
+2025-11-23 13:00:00,Food,333.64,Net Banking,Paid for food
+2025-11-23 16:05:00,Education,2403.69,Debit Card,Paid for education
+2025-11-23 19:38:00,Entertainment,445.25,Net Banking,Paid for entertainment
+2025-11-24 21:55:00,Food,618.25,Debit Card,Paid for food
+2025-11-24 22:12:00,Transport,100.01,UPI,Paid for transport
+2025-11-25 14:19:00,Shopping,655.46,Debit Card,Paid for shopping
+2025-11-26 09:24:00,Transport,191.55,Cash,Paid for transport
+2025-11-26 13:34:00,Transport,71.27,Debit Card,Paid for transport
+2025-11-26 14:32:00,Bills,1806.65,Credit Card,Paid for bills
+2025-11-26 14:43:00,Food,169.35,UPI,Paid for food
+2025-11-26 17:29:00,Food,162.46,Credit Card,Paid for food
+2025-11-26 22:39:00,Food,645.3,Debit Card,Paid for food
+2025-11-29 12:10:00,Food,228.1,Debit Card,Paid for food
+2025-11-29 17:45:00,Transport,109.23,Net Banking,Paid for transport
+2025-11-29 22:27:00,Food,145.53,Debit Card,Paid for food
+2025-12-02 13:15:00,Transport,157.82,Cash,Paid for transport
+2025-12-03 00:00:00,Rent,17761.12,Net Banking,Monthly rent payment
+2025-12-03 20:55:00,Shopping,2127.46,Debit Card,Paid for shopping
+2025-12-03 21:41:00,Food,221.72,UPI,Paid for food
+2025-12-03 22:06:00,Bills,2825.24,Debit Card,Paid for bills
+2025-12-04 09:55:00,Food,514.06,Net Banking,Paid for food
+2025-12-05 09:06:00,Food,372.36,Cash,Paid for food
+2025-12-05 18:49:00,Transport,203.54,Net Banking,Paid for transport
+2025-12-06 19:27:00,Transport,120.57,UPI,Paid for transport
+2025-12-06 21:45:00,Transport,292.46,UPI,Paid for transport
+2025-12-07 08:04:00,Transport,171.57,Credit Card,Paid for transport
+2025-12-07 10:59:00,Shopping,1777.15,Debit Card,Paid for shopping
+2025-12-07 12:07:00,Entertainment,761.22,Credit Card,Paid for entertainment
+2025-12-07 18:44:00,Shopping,1022.42,Credit Card,Paid for shopping
+2025-12-07 22:11:00,Food,615.72,UPI,Paid for food
+2025-12-08 09:15:00,Medical,2281.23,Debit Card,Paid for medical
+2025-12-08 19:31:00,Others,216.27,Cash,Paid for others
+2025-12-13 13:08:00,Transport,297.64,Cash,Paid for transport
+2025-12-13 18:48:00,Food,201.13,Debit Card,Paid for food
+2025-12-14 09:22:00,Food,814.39,UPI,Paid for food
+2025-12-14 12:32:00,Food,531.91,Debit Card,Paid for food
+2025-12-14 14:58:00,Food,199.72,Net Banking,Paid for food
+2025-12-14 16:48:00,Food,159.8,Cash,Paid for food
+2025-12-14 17:22:00,Food,741.68,UPI,Paid for food
+2025-12-14 20:51:00,Transport,107.79,Debit Card,Paid for transport
+2025-12-14 21:47:00,Food,557.58,Net Banking,Paid for food
+2025-12-15 10:13:00,Others,614.75,Cash,Paid for others
+2025-12-15 12:38:00,Education,2353.36,UPI,Paid for education
+2025-12-15 12:43:00,Shopping,991.6,Credit Card,Paid for shopping
+2025-12-15 16:41:00,Food,342.67,UPI,Paid for food
+2025-12-15 21:48:00,Transport,241.39,Credit Card,Paid for transport
+2025-12-16 12:08:00,Food,282.66,Debit Card,Paid for food
+2025-12-17 14:41:00,Entertainment,365.89,Debit Card,Paid for entertainment
+2025-12-18 08:58:00,Food,106.97,Credit Card,Paid for food
+2025-12-18 16:12:00,Bills,1468.2,Net Banking,Paid for bills
+2025-12-20 11:45:00,Transport,298.43,UPI,Paid for transport
+2025-12-20 20:59:00,Others,109.3,UPI,Paid for others
+2025-12-21 11:26:00,Travel,4833.4,UPI,Paid for travel
+2025-12-21 12:12:00,Food,663.3,UPI,Paid for food
+2025-12-24 21:04:00,Food,182.57,Debit Card,Paid for food
+2025-12-25 13:24:00,Others,1025.11,UPI,Paid for others
+2025-12-25 20:59:00,Food,548.68,Cash,Paid for food
+2025-12-26 11:32:00,Entertainment,1028.66,Net Banking,Paid for entertainment
+2025-12-26 20:37:00,Food,292.91,Net Banking,Paid for food
+2025-12-27 22:02:00,Food,437.48,Credit Card,Paid for food
+2025-12-28 09:31:00,Bills,1405.22,Debit Card,Paid for bills
+2025-12-28 10:28:00,Others,245.01,Credit Card,Paid for others
+2025-12-28 13:35:00,Food,637.27,Net Banking,Paid for food
+2025-12-28 15:53:00,Transport,113.66,Cash,Paid for transport
+2025-12-29 10:53:00,Transport,215.76,Credit Card,Paid for transport
+2025-12-29 12:28:00,Food,130.65,Debit Card,Paid for food
+2025-12-29 20:49:00,Investment,2507.88,Debit Card,Paid for investment
+2025-12-29 22:26:00,Transport,216.78,Cash,Paid for transport
+2025-12-29 22:28:00,Transport,262.47,Debit Card,Paid for transport
+2025-12-30 12:33:00,Entertainment,930.95,Net Banking,Paid for entertainment
+2025-12-30 13:00:00,Investment,8505.11,Net Banking,Paid for investment
+2025-12-31 15:55:00,Entertainment,490.03,Net Banking,Paid for entertainment
+2026-01-01 00:00:00,Rent,12980.73,Net Banking,Monthly rent payment
+2026-01-01 10:18:00,Transport,283.73,UPI,Paid for transport
+2026-01-01 13:03:00,Transport,224.74,Cash,Paid for transport
+2026-01-01 14:31:00,Transport,97.45,Credit Card,Paid for transport
+2026-01-01 15:28:00,Food,766.86,UPI,Paid for food
+2026-01-02 12:08:00,Food,462.46,Cash,Paid for food
+2026-01-02 14:53:00,Transport,194.01,Debit Card,Paid for transport
+2026-01-03 17:58:00,Transport,100.08,UPI,Paid for transport
+2026-01-04 17:45:00,Others,394.1,UPI,Paid for others
+2026-01-04 18:10:00,Food,787.54,Cash,Paid for food
+2026-01-06 09:07:00,Food,540.72,Debit Card,Paid for food
+2026-01-06 17:11:00,Food,428.97,UPI,Paid for food
+2026-01-06 20:22:00,Food,639.37,Credit Card,Paid for food
+2026-01-07 14:52:00,Transport,108.72,Debit Card,Paid for transport
+2026-01-08 12:04:00,Shopping,4173.79,Credit Card,Paid for shopping
+2026-01-08 16:14:00,Food,702.81,Credit Card,Paid for food
+2026-01-08 16:37:00,Food,198.57,Debit Card,Paid for food
+2026-01-09 11:14:00,Travel,6285.39,Credit Card,Paid for travel
+2026-01-10 20:50:00,Transport,101.55,UPI,Paid for transport
+2026-01-12 09:14:00,Entertainment,1018.01,Debit Card,Paid for entertainment
+2026-01-13 14:52:00,Transport,288.35,Net Banking,Paid for transport
+2026-01-13 15:46:00,Shopping,4214.72,UPI,Paid for shopping
+2026-01-14 14:15:00,Others,559.41,Net Banking,Paid for others
+2026-01-14 14:54:00,Entertainment,406.77,UPI,Paid for entertainment
+2026-01-14 17:59:00,Investment,8602.64,Debit Card,Paid for investment
+2026-01-14 18:23:00,Shopping,4147.78,UPI,Paid for shopping
+2026-01-15 19:14:00,Food,683.32,Net Banking,Paid for food
+2026-01-16 18:18:00,Transport,207.21,Credit Card,Paid for transport
+2026-01-16 18:38:00,Food,581.48,Net Banking,Paid for food
+2026-01-16 21:38:00,Bills,2983.84,Cash,Paid for bills
+2026-01-16 21:39:00,Transport,269.96,Net Banking,Paid for transport
+2026-01-17 17:38:00,Food,489.31,UPI,Paid for food
+2026-01-17 21:21:00,Food,171.49,Net Banking,Paid for food
+2026-01-18 10:38:00,Food,817.04,Net Banking,Paid for food
+2026-01-18 18:24:00,Food,719.27,UPI,Paid for food
+2026-01-18 20:22:00,Bills,1535.71,Net Banking,Paid for bills
+2026-01-18 21:55:00,Others,631.95,Credit Card,Paid for others
+2026-01-19 15:24:00,Others,726.22,Net Banking,Paid for others
+2026-01-19 15:51:00,Entertainment,571.55,Net Banking,Paid for entertainment
+2026-01-19 17:16:00,Food,844.36,Net Banking,Paid for food
+2026-01-20 15:16:00,Food,384.25,Debit Card,Paid for food
+2026-01-20 21:35:00,Food,143.22,UPI,Paid for food
+2026-01-21 09:11:00,Education,5104.89,Net Banking,Paid for education
+2026-01-21 11:36:00,Transport,180.7,UPI,Paid for transport
+2026-01-21 13:18:00,Food,679.37,Cash,Paid for food
+2026-01-21 13:27:00,Food,335.3,Net Banking,Paid for food
+2026-01-21 16:09:00,Others,109.96,Credit Card,Paid for others
+2026-01-21 21:51:00,Food,548.5,Debit Card,Paid for food
+2026-01-22 12:15:00,Food,433.16,UPI,Paid for food
+2026-01-22 14:56:00,Transport,235.02,Net Banking,Paid for transport
+2026-01-24 16:48:00,Food,709.01,Net Banking,Paid for food
+2026-01-24 22:14:00,Food,779.88,Cash,Paid for food
+2026-01-25 11:39:00,Medical,1771.71,UPI,Paid for medical
+2026-01-25 20:22:00,Transport,123.38,Net Banking,Paid for transport
+2026-01-26 17:41:00,Food,408.48,Cash,Paid for food
+2026-01-27 08:22:00,Transport,103.31,Debit Card,Paid for transport
+2026-01-27 13:23:00,Food,612.09,Credit Card,Paid for food
+2026-01-28 18:00:00,Shopping,2259.27,UPI,Paid for shopping
+2026-01-28 18:36:00,Investment,9945.35,Debit Card,Paid for investment
+2026-01-30 11:50:00,Entertainment,586.41,Credit Card,Paid for entertainment
+2026-01-30 16:10:00,Bills,3336.66,Credit Card,Paid for bills
+2026-01-30 18:43:00,Others,925.19,UPI,Paid for others
+2026-02-01 08:32:00,Food,632.14,UPI,Paid for food
+2026-02-01 19:14:00,Transport,221.13,UPI,Paid for transport
+2026-02-02 00:00:00,Rent,17345.22,Net Banking,Monthly rent payment
+2026-02-02 08:55:00,Food,505.55,Debit Card,Paid for food
+2026-02-02 11:16:00,Shopping,4249.52,UPI,Paid for shopping
+2026-02-02 14:59:00,Transport,268.31,Credit Card,Paid for transport
+2026-02-03 08:06:00,Entertainment,1252.84,Debit Card,Paid for entertainment
+2026-02-03 10:10:00,Transport,283.84,Debit Card,Paid for transport
+2026-02-03 14:27:00,Food,788.78,UPI,Paid for food
+2026-02-03 15:13:00,Transport,110.71,Debit Card,Paid for transport
+2026-02-03 22:15:00,Food,344.52,Credit Card,Paid for food
+2026-02-04 14:38:00,Shopping,3265.46,Credit Card,Paid for shopping
+2026-02-06 12:03:00,Food,621.38,Net Banking,Paid for food
+2026-02-06 19:25:00,Entertainment,1428.97,Debit Card,Paid for entertainment
+2026-02-07 15:34:00,Food,820.68,Credit Card,Paid for food
+2026-02-08 09:33:00,Transport,77.45,Debit Card,Paid for transport
+2026-02-08 10:44:00,Others,607.68,Net Banking,Paid for others
+2026-02-08 17:33:00,Food,839.07,Net Banking,Paid for food
+2026-02-08 17:49:00,Medical,1634.56,UPI,Paid for medical
+2026-02-09 08:48:00,Food,407.91,Debit Card,Paid for food
+2026-02-09 11:05:00,Shopping,3985.61,Net Banking,Paid for shopping
+2026-02-09 16:25:00,Others,142.84,UPI,Paid for others
+2026-02-09 16:49:00,Transport,118.57,UPI,Paid for transport
+2026-02-09 21:45:00,Shopping,3561.22,Credit Card,Paid for shopping
+2026-02-10 08:13:00,Education,1430.21,Cash,Paid for education
+2026-02-10 09:20:00,Food,438.11,Cash,Paid for food
+2026-02-10 20:26:00,Food,273.36,Net Banking,Paid for food
+2026-02-11 09:52:00,Others,849.81,Debit Card,Paid for others
+2026-02-11 10:42:00,Food,740.4,Net Banking,Paid for food
+2026-02-13 18:01:00,Food,532.4,Debit Card,Paid for food
+2026-02-13 18:41:00,Bills,3345.34,UPI,Paid for bills
+2026-02-13 19:24:00,Food,720.89,UPI,Paid for food
+2026-02-13 21:59:00,Food,699.03,Debit Card,Paid for food
+2026-02-14 09:21:00,Entertainment,1563.38,Credit Card,Paid for entertainment
+2026-02-14 12:43:00,Transport,266.36,UPI,Paid for transport
+2026-02-14 13:40:00,Bills,2262.42,Credit Card,Paid for bills
+2026-02-14 15:01:00,Food,654.83,UPI,Paid for food
+2026-02-14 17:54:00,Food,421.8,Debit Card,Paid for food
+2026-02-15 17:01:00,Investment,5843.39,Debit Card,Paid for investment
+2026-02-15 20:19:00,Travel,1651.34,Credit Card,Paid for travel
+2026-02-16 15:42:00,Transport,168.66,Net Banking,Paid for transport
+2026-02-17 11:43:00,Food,751.23,Net Banking,Paid for food
+2026-02-19 13:59:00,Transport,273.15,Cash,Paid for transport
+2026-02-19 15:22:00,Bills,2057.71,Credit Card,Paid for bills
+2026-02-19 22:37:00,Food,408.69,Cash,Paid for food
+2026-02-20 11:50:00,Food,153.59,Cash,Paid for food
+2026-02-21 09:30:00,Transport,317.68,Debit Card,Paid for transport
+2026-02-21 11:21:00,Entertainment,430.1,Debit Card,Paid for entertainment
+2026-02-21 15:22:00,Food,386.89,UPI,Paid for food
+2026-02-21 18:02:00,Investment,3375.24,Credit Card,Paid for investment
+2026-02-22 09:16:00,Transport,84.65,Net Banking,Paid for transport
+2026-02-22 12:35:00,Food,766.18,Cash,Paid for food
+2026-02-22 12:42:00,Food,474.98,UPI,Paid for food
+2026-02-23 12:41:00,Food,525.65,Credit Card,Paid for food
+2026-02-23 19:59:00,Others,682.63,Cash,Paid for others
+2026-02-24 16:46:00,Food,231.13,Cash,Paid for food
+2026-02-25 11:10:00,Food,769.3,Cash,Paid for food
+2026-02-26 11:37:00,Food,496.48,Debit Card,Paid for food
+2026-02-26 14:14:00,Transport,173.25,Debit Card,Paid for transport
+2026-02-26 22:06:00,Entertainment,683.01,Net Banking,Paid for entertainment
+2026-02-27 19:24:00,Food,242.23,Credit Card,Paid for food
+2026-02-27 20:57:00,Food,425.2,Cash,Paid for food
+2026-02-27 22:58:00,Transport,74.63,Credit Card,Paid for transport
+2026-02-28 15:11:00,Entertainment,1486.33,Net Banking,Paid for entertainment
+2026-02-28 15:28:00,Food,780.04,UPI,Paid for food
+2026-02-28 20:12:00,Food,842.5,Net Banking,Paid for food
+2026-03-01 17:00:00,Food,820.17,UPI,Paid for food
+2026-03-01 17:20:00,Food,630.3,Net Banking,Paid for food
+2026-03-01 20:17:00,Food,793.26,Cash,Paid for food
+2026-03-02 12:34:00,Food,569.97,Debit Card,Paid for food
+2026-03-02 21:17:00,Others,776.17,UPI,Paid for others
+2026-03-03 17:44:00,Entertainment,301.92,Credit Card,Paid for entertainment
+2026-03-04 00:00:00,Rent,14873.31,Net Banking,Monthly rent payment
+2026-03-04 08:52:00,Food,466.69,Net Banking,Paid for food
+2026-03-04 11:04:00,Others,318.81,Credit Card,Paid for others
+2026-03-04 18:41:00,Transport,158.01,Cash,Paid for transport
+2026-03-05 10:38:00,Others,172.02,Credit Card,Paid for others
+2026-03-05 12:12:00,Transport,158.7,Debit Card,Paid for transport
+2026-03-05 20:35:00,Transport,226.82,UPI,Paid for transport
+2026-03-06 08:20:00,Shopping,3249.81,Cash,Paid for shopping
+2026-03-06 15:31:00,Food,592.99,Debit Card,Paid for food
+2026-03-07 13:24:00,Bills,1981.57,Debit Card,Paid for bills
+2026-03-07 16:58:00,Entertainment,707.48,Cash,Paid for entertainment
+2026-03-08 10:34:00,Food,551.31,UPI,Paid for food
+2026-03-08 19:27:00,Food,681.68,Cash,Paid for food
+2026-03-08 20:51:00,Food,655.99,Debit Card,Paid for food
+2026-03-09 20:34:00,Others,553.77,UPI,Paid for others
+2026-03-10 13:11:00,Food,426.82,Credit Card,Paid for food
+2026-03-10 13:41:00,Transport,223.44,UPI,Paid for transport
+2026-03-10 16:56:00,Others,374.48,Debit Card,Paid for others
+2026-03-10 20:31:00,Transport,172.75,Debit Card,Paid for transport
+2026-03-10 22:51:00,Transport,247.47,Credit Card,Paid for transport
+2026-03-11 08:59:00,Transport,165.92,Debit Card,Paid for transport
+2026-03-12 09:16:00,Transport,239.35,Debit Card,Paid for transport
+2026-03-12 13:23:00,Transport,288.04,Debit Card,Paid for transport
+2026-03-12 15:22:00,Transport,78.8,Net Banking,Paid for transport
+2026-03-13 10:31:00,Food,476.58,Net Banking,Paid for food
+2026-03-14 09:04:00,Entertainment,421.06,Credit Card,Paid for entertainment
+2026-03-14 18:52:00,Bills,2987.83,Cash,Paid for bills
+2026-03-14 20:16:00,Food,124.52,Debit Card,Paid for food
+2026-03-14 21:55:00,Others,1059.31,UPI,Paid for others
+2026-03-15 14:38:00,Shopping,2661.1,Cash,Paid for shopping
+2026-03-15 18:16:00,Food,692.12,Debit Card,Paid for food
+2026-03-15 22:12:00,Food,412.71,Net Banking,Paid for food
+2026-03-15 22:32:00,Food,280.88,Debit Card,Paid for food
+2026-03-16 10:01:00,Food,502.16,Net Banking,Paid for food
+2026-03-16 12:21:00,Food,801.2,Cash,Paid for food
+2026-03-17 10:33:00,Food,308.21,Debit Card,Paid for food
+2026-03-17 13:12:00,Food,149.45,Credit Card,Paid for food
+2026-03-17 18:12:00,Food,234.78,Debit Card,Paid for food
+2026-03-18 13:52:00,Food,786.07,Credit Card,Paid for food
+2026-03-18 13:52:00,Transport,186.94,Debit Card,Paid for transport
+2026-03-19 10:09:00,Food,601.09,Cash,Paid for food
+2026-03-19 10:17:00,Shopping,3002.39,Cash,Paid for shopping
+2026-03-19 14:32:00,Transport,236.86,Credit Card,Paid for transport
+2026-03-19 16:01:00,Food,607.85,Credit Card,Paid for food
+2026-03-20 22:07:00,Shopping,594.33,Debit Card,Paid for shopping
+2026-03-21 10:41:00,Food,465.6,Debit Card,Paid for food
+2026-03-21 10:42:00,Transport,203.56,Cash,Paid for transport
+2026-03-21 18:20:00,Transport,53.73,Net Banking,Paid for transport
+2026-03-22 19:21:00,Transport,199.03,UPI,Paid for transport
+2026-03-22 21:52:00,Medical,827.77,Debit Card,Paid for medical
+2026-03-23 08:51:00,Transport,105.34,Net Banking,Paid for transport
+2026-03-23 17:28:00,Transport,281.78,UPI,Paid for transport
+2026-03-23 20:04:00,Food,593.07,Credit Card,Paid for food
+2026-03-24 13:19:00,Investment,10110.98,UPI,Paid for investment
+2026-03-25 14:21:00,Food,118.45,UPI,Paid for food
+2026-03-25 16:11:00,Food,496.66,Debit Card,Paid for food
+2026-03-27 17:29:00,Food,477.91,Cash,Paid for food
+2026-03-27 18:14:00,Education,1382.9,UPI,Paid for education
+2026-03-27 19:45:00,Food,483.32,Debit Card,Paid for food
+2026-03-28 12:58:00,Food,772.82,Credit Card,Paid for food
+2026-03-29 17:37:00,Investment,7600.54,Cash,Paid for investment
+2026-03-29 20:06:00,Entertainment,1257.65,Net Banking,Paid for entertainment
+2026-03-30 08:31:00,Bills,3603.96,Credit Card,Paid for bills
+2026-03-30 17:41:00,Travel,2843.85,UPI,Paid for travel
+2026-03-30 22:20:00,Transport,126.67,Net Banking,Paid for transport
+2026-04-02 13:11:00,Bills,2077.03,Cash,Paid for bills
+2026-04-02 20:37:00,Food,274.32,Cash,Paid for food
+2026-04-02 22:41:00,Transport,250.63,Net Banking,Paid for transport
+2026-04-03 16:40:00,Food,510.31,UPI,Paid for food
+2026-04-03 21:27:00,Entertainment,237.19,UPI,Paid for entertainment
+2026-04-04 18:21:00,Food,397.94,UPI,Paid for food
+2026-04-04 21:26:00,Food,499.21,Net Banking,Paid for food
+2026-04-05 00:00:00,Rent,15711.82,Net Banking,Monthly rent payment
+2026-04-05 21:57:00,Others,193.07,Cash,Paid for others
+2026-04-06 08:19:00,Food,737.39,Credit Card,Paid for food
+2026-04-06 11:36:00,Food,454.74,UPI,Paid for food
+2026-04-06 16:26:00,Others,590.98,UPI,Paid for others
+2026-04-07 11:10:00,Food,314.35,UPI,Paid for food
+2026-04-08 14:28:00,Food,763.55,Cash,Paid for food
+2026-04-09 09:33:00,Food,462.27,Credit Card,Paid for food
+2026-04-09 17:18:00,Food,855.51,Net Banking,Paid for food
+2026-04-09 20:45:00,Transport,184.3,Debit Card,Paid for transport
+2026-04-09 22:20:00,Food,542.4,Debit Card,Paid for food
+2026-04-10 09:53:00,Food,278.24,Debit Card,Paid for food
+2026-04-12 18:36:00,Shopping,792.94,Net Banking,Paid for shopping
+2026-04-13 18:00:00,Others,664.19,Debit Card,Paid for others
+2026-04-14 08:05:00,Entertainment,1153.98,Debit Card,Paid for entertainment
+2026-04-14 17:53:00,Transport,234.55,Net Banking,Paid for transport
+2026-04-15 20:45:00,Food,628.64,Debit Card,Paid for food
+2026-04-16 08:43:00,Shopping,1088.02,Credit Card,Paid for shopping
+2026-04-16 12:42:00,Transport,294.84,Net Banking,Paid for transport
+2026-04-16 13:44:00,Transport,122.6,Debit Card,Paid for transport
+2026-04-16 14:51:00,Food,376.27,Credit Card,Paid for food
+2026-04-17 08:19:00,Transport,155.47,Credit Card,Paid for transport
+2026-04-17 08:54:00,Food,666.68,Debit Card,Paid for food
+2026-04-17 11:27:00,Food,611.95,Credit Card,Paid for food
+2026-04-17 13:44:00,Transport,314.69,UPI,Paid for transport
+2026-04-18 10:20:00,Food,798.81,UPI,Paid for food
+2026-04-18 13:15:00,Food,645.56,Net Banking,Paid for food
+2026-04-18 15:25:00,Food,318.77,Debit Card,Paid for food
+2026-04-18 16:45:00,Food,644.64,Debit Card,Paid for food
+2026-04-18 17:39:00,Transport,151.8,Credit Card,Paid for transport
+2026-04-20 17:08:00,Investment,6793.26,Cash,Paid for investment
+2026-04-21 08:58:00,Entertainment,433.69,Cash,Paid for entertainment
+2026-04-21 20:09:00,Others,896.08,Net Banking,Paid for others
+2026-04-21 22:32:00,Food,841.76,Debit Card,Paid for food
+2026-04-22 13:50:00,Food,524.59,Debit Card,Paid for food
+2026-04-22 14:48:00,Food,233.66,Net Banking,Paid for food
+2026-04-22 21:28:00,Transport,294.31,Debit Card,Paid for transport
+2026-04-22 22:38:00,Food,162.6,UPI,Paid for food
+2026-04-22 22:59:00,Bills,2499.1,Debit Card,Paid for bills
+2026-04-23 10:17:00,Transport,178.55,Credit Card,Paid for transport
+2026-04-24 12:51:00,Entertainment,1097.8,Net Banking,Paid for entertainment
+2026-04-25 08:51:00,Shopping,1876.03,Cash,Paid for shopping
+2026-04-25 18:25:00,Transport,109.38,Net Banking,Paid for transport
+2026-04-26 12:33:00,Education,3931.65,UPI,Paid for education
+2026-04-26 17:50:00,Transport,81.48,Cash,Paid for transport
+2026-04-27 10:53:00,Travel,3157.79,Net Banking,Paid for travel
+2026-04-27 12:50:00,Bills,2572.64,Net Banking,Paid for bills
+2026-04-27 14:36:00,Transport,129.44,Cash,Paid for transport
+2026-04-28 11:21:00,Entertainment,940.85,Cash,Paid for entertainment
+2026-04-28 14:21:00,Transport,132.87,Credit Card,Paid for transport
+2026-04-28 19:07:00,Entertainment,486.38,Net Banking,Paid for entertainment
+2026-04-29 21:33:00,Food,252.61,Net Banking,Paid for food
+2026-04-29 22:17:00,Medical,1831.51,Debit Card,Paid for medical
+2026-04-30 08:29:00,Food,695.46,Net Banking,Paid for food
+2026-04-30 09:33:00,Transport,183.09,Debit Card,Paid for transport
+2026-04-30 18:01:00,Investment,6649.32,Debit Card,Paid for investment
+2026-04-30 18:44:00,Shopping,2335.32,UPI,Paid for shopping
+2026-04-30 19:22:00,Transport,173.5,Credit Card,Paid for transport
+2026-05-01 13:45:00,Food,601.58,UPI,Paid for food
+2026-05-02 12:20:00,Transport,272.44,Credit Card,Paid for transport
+2026-05-02 16:08:00,Transport,82.71,Cash,Paid for transport
+2026-05-02 18:44:00,Others,905.6,UPI,Paid for others
+2026-05-03 08:48:00,Entertainment,569.02,Net Banking,Paid for entertainment
+2026-05-03 10:41:00,Transport,271.7,Credit Card,Paid for transport
+2026-05-03 22:49:00,Travel,8109.5,UPI,Paid for travel
+2026-05-04 00:00:00,Rent,12756.91,Net Banking,Monthly rent payment
+2026-05-04 14:26:00,Transport,266.37,Net Banking,Paid for transport
+2026-05-04 19:00:00,Shopping,3193.18,Net Banking,Paid for shopping
+2026-05-05 10:03:00,Entertainment,1079.14,Cash,Paid for entertainment
+2026-05-05 15:51:00,Food,776.65,Debit Card,Paid for food
+2026-05-05 22:47:00,Transport,262.74,Credit Card,Paid for transport
+2026-05-06 12:32:00,Entertainment,1400.53,Net Banking,Paid for entertainment
+2026-05-07 08:53:00,Shopping,1989.14,UPI,Paid for shopping
+2026-05-07 18:23:00,Bills,2753.96,Debit Card,Paid for bills
+2026-05-09 14:12:00,Food,473.46,Net Banking,Paid for food
+2026-05-09 18:02:00,Entertainment,969.9,Debit Card,Paid for entertainment
+2026-05-10 09:54:00,Food,644.53,Net Banking,Paid for food
+2026-05-10 14:51:00,Others,309.73,Debit Card,Paid for others
+2026-05-10 15:34:00,Food,368.48,Credit Card,Paid for food
+2026-05-10 17:56:00,Food,147.09,UPI,Paid for food
+2026-05-10 21:07:00,Bills,3346.39,Cash,Paid for bills
+2026-05-12 15:06:00,Food,313.76,UPI,Paid for food
+2026-05-12 19:40:00,Food,580.08,UPI,Paid for food
+2026-05-13 12:06:00,Bills,3420.15,Cash,Paid for bills
+2026-05-13 16:29:00,Shopping,758.33,UPI,Paid for shopping
+2026-05-13 18:45:00,Food,683.92,UPI,Paid for food
+2026-05-14 19:34:00,Transport,287.12,Net Banking,Paid for transport
+2026-05-15 12:58:00,Food,497.16,Debit Card,Paid for food
+2026-05-15 13:43:00,Others,329.27,UPI,Paid for others
+2026-05-15 20:53:00,Transport,158.77,Debit Card,Paid for transport
+2026-05-16 14:05:00,Transport,181.68,Cash,Paid for transport
+2026-05-16 15:49:00,Shopping,2932.16,Debit Card,Paid for shopping
+2026-05-16 19:33:00,Education,3050.0,Credit Card,Paid for education
+2026-05-17 12:08:00,Food,542.57,UPI,Paid for food
+2026-05-17 14:20:00,Food,342.45,UPI,Paid for food
+2026-05-17 17:57:00,Transport,275.62,Debit Card,Paid for transport
+2026-05-17 18:48:00,Medical,2382.87,UPI,Paid for medical
+2026-05-19 10:22:00,Food,611.37,Cash,Paid for food
+2026-05-19 10:41:00,Investment,10451.97,Net Banking,Paid for investment
+2026-05-19 18:42:00,Food,658.95,UPI,Paid for food
+2026-05-20 08:22:00,Transport,234.99,Credit Card,Paid for transport
+2026-05-20 13:25:00,Food,655.36,Credit Card,Paid for food
+2026-05-20 18:15:00,Food,189.02,Credit Card,Paid for food
+2026-05-20 18:51:00,Transport,206.9,Debit Card,Paid for transport
+2026-05-20 20:43:00,Transport,215.59,Net Banking,Paid for transport
+2026-05-20 22:42:00,Food,138.82,Net Banking,Paid for food
+2026-05-21 11:08:00,Transport,288.03,UPI,Paid for transport
+2026-05-21 14:26:00,Transport,224.41,Credit Card,Paid for transport
+2026-05-21 15:39:00,Transport,170.98,Net Banking,Paid for transport
+2026-05-23 14:22:00,Others,1053.12,UPI,Paid for others
+2026-05-23 22:08:00,Transport,308.0,UPI,Paid for transport
+2026-05-25 10:36:00,Others,276.42,Net Banking,Paid for others
+2026-05-25 12:00:00,Food,358.29,UPI,Paid for food
+2026-05-25 15:53:00,Food,636.23,Credit Card,Paid for food
+2026-05-28 16:52:00,Food,825.69,Debit Card,Paid for food
+2026-05-29 08:28:00,Others,588.42,Debit Card,Paid for others
+2026-05-29 11:39:00,Investment,5073.49,Credit Card,Paid for investment
+2026-05-29 15:21:00,Food,189.17,Net Banking,Paid for food
+2026-05-29 18:57:00,Food,532.62,Debit Card,Paid for food
+2026-05-30 22:45:00,Food,446.5,Credit Card,Paid for food
+2026-06-01 00:00:00,Rent,14522.12,Net Banking,Monthly rent payment
+2026-06-01 10:21:00,Transport,69.48,Credit Card,Paid for transport
+2026-06-01 15:08:00,Food,480.44,Net Banking,Paid for food
+2026-06-01 18:44:00,Transport,65.78,UPI,Paid for transport
+2026-06-02 11:09:00,Entertainment,569.91,Credit Card,Paid for entertainment
+2026-06-03 11:03:00,Others,436.58,Net Banking,Paid for others
+2026-06-03 21:46:00,Shopping,3335.42,UPI,Paid for shopping
+2026-06-04 08:32:00,Food,221.4,Debit Card,Paid for food
+2026-06-04 14:12:00,Food,182.68,Credit Card,Paid for food
+2026-06-05 20:51:00,Food,376.93,Debit Card,Paid for food
+2026-06-05 22:30:00,Food,778.52,Net Banking,Paid for food
+2026-06-06 09:17:00,Food,389.22,UPI,Paid for food
+2026-06-06 10:34:00,Bills,3954.58,Credit Card,Paid for bills
+2026-06-06 13:33:00,Food,733.32,Credit Card,Paid for food
+2026-06-07 11:50:00,Food,648.65,Credit Card,Paid for food
+2026-06-07 12:18:00,Investment,8150.53,Cash,Paid for investment
+2026-06-07 13:22:00,Transport,84.16,Debit Card,Paid for transport
+2026-06-07 20:23:00,Food,161.87,Debit Card,Paid for food
+2026-06-08 18:22:00,Shopping,1467.46,Debit Card,Paid for shopping
+2026-06-09 17:19:00,Food,841.41,UPI,Paid for food
+2026-06-09 21:04:00,Others,507.45,Cash,Paid for others
+2026-06-10 08:58:00,Travel,6481.35,Debit Card,Paid for travel
+2026-06-10 11:19:00,Food,458.01,Credit Card,Paid for food
+2026-06-10 15:42:00,Others,316.82,Debit Card,Paid for others
+2026-06-10 17:03:00,Entertainment,1625.45,Debit Card,Paid for entertainment
+2026-06-10 18:24:00,Entertainment,306.28,UPI,Paid for entertainment
+2026-06-10 19:55:00,Food,370.96,Net Banking,Paid for food
+2026-06-10 21:26:00,Food,719.35,Credit Card,Paid for food
+2026-06-11 22:20:00,Transport,213.39,Cash,Paid for transport
+2026-06-13 21:03:00,Food,772.25,Cash,Paid for food
+2026-06-14 08:51:00,Transport,256.64,Cash,Paid for transport
+2026-06-14 08:54:00,Entertainment,1339.06,Credit Card,Paid for entertainment
+2026-06-14 09:33:00,Food,722.76,Cash,Paid for food
+2026-06-14 10:18:00,Food,659.77,Net Banking,Paid for food
+2026-06-14 12:06:00,Food,123.99,Credit Card,Paid for food
+2026-06-15 08:30:00,Food,779.32,UPI,Paid for food
+2026-06-15 08:36:00,Others,532.34,Net Banking,Paid for others
+2026-06-15 11:45:00,Entertainment,1212.15,Net Banking,Paid for entertainment
+2026-06-16 11:45:00,Food,688.36,Credit Card,Paid for food
+2026-06-17 08:39:00,Transport,233.16,Credit Card,Paid for transport
+2026-06-17 22:03:00,Food,347.22,Credit Card,Paid for food
+2026-06-19 08:43:00,Food,279.28,UPI,Paid for food
+2026-06-19 10:04:00,Food,465.6,Credit Card,Paid for food
+2026-06-19 11:30:00,Transport,327.2,Cash,Paid for transport
+2026-06-20 08:29:00,Investment,9899.57,Cash,Paid for investment
+2026-06-20 09:18:00,Transport,191.65,UPI,Paid for transport
+2026-06-21 15:45:00,Food,140.09,Net Banking,Paid for food
+2026-06-23 08:42:00,Bills,4897.34,UPI,Paid for bills
+2026-06-23 09:16:00,Food,234.29,Credit Card,Paid for food
+2026-06-23 14:48:00,Transport,174.73,UPI,Paid for transport
+2026-06-23 15:36:00,Transport,172.65,Cash,Paid for transport
+2026-06-23 15:41:00,Food,823.66,Net Banking,Paid for food
+2026-06-23 17:31:00,Education,5226.98,Debit Card,Paid for education
+2026-06-23 21:45:00,Entertainment,1393.91,UPI,Paid for entertainment
+2026-06-24 16:23:00,Transport,132.7,UPI,Paid for transport
+2026-06-24 17:07:00,Shopping,2181.77,Credit Card,Paid for shopping
+2026-06-25 14:11:00,Transport,72.58,Net Banking,Paid for transport
+2026-06-25 14:12:00,Food,665.67,Debit Card,Paid for food
+2026-06-25 19:17:00,Food,294.5,Credit Card,Paid for food
+2026-06-26 20:47:00,Medical,1056.36,Cash,Paid for medical
+2026-06-26 20:53:00,Transport,83.89,UPI,Paid for transport
+2026-06-27 10:54:00,Others,713.77,Debit Card,Paid for others
+2026-06-27 12:32:00,Transport,68.32,Debit Card,Paid for transport
+2026-06-27 13:29:00,Food,182.16,Net Banking,Paid for food
+2026-06-28 08:48:00,Bills,2773.94,UPI,Paid for bills
+2026-06-29 09:18:00,Shopping,3412.91,Cash,Paid for shopping
+2026-06-29 11:04:00,Transport,275.92,Credit Card,Paid for transport
+2026-07-01 09:01:00,Transport,235.29,Net Banking,Paid for transport
+2026-07-01 10:20:00,Shopping,2448.87,UPI,Paid for shopping
+2026-07-03 15:34:00,Food,658.46,UPI,Paid for food
+2026-07-03 16:42:00,Transport,69.0,Credit Card,Paid for transport
+2026-07-03 16:55:00,Shopping,1889.64,Net Banking,Paid for shopping
