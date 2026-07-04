@@ -157,4 +157,48 @@ router.get('/insights', protect, async (req, res) => {
   }
 });
 
+// @desc    Call AI Chatbot advisor
+// @route   POST /api/predictions/chat
+// @access  Private
+router.post('/chat', protect, async (req, res) => {
+  const { message } = req.body;
+  if (!message) {
+    return res.status(400).json({ message: 'Message text is required.' });
+  }
+
+  try {
+    const expenses = await prisma.expense.findMany({
+      where: { user_id: req.user.user_id },
+      include: { category: true },
+      orderBy: { expense_date: 'asc' },
+    });
+
+    const formattedExpenses = expenses.map((exp) => ({
+      date: exp.expense_date.toISOString(),
+      category: exp.category.category_name,
+      amount: exp.amount,
+      description: exp.description || '',
+    }));
+
+    const response = await fetch(`${AI_SERVICE_URL}/chat`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        expenses: formattedExpenses,
+        message: message
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('AI Service chat assistant failed');
+    }
+
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Chat bot error:', error);
+    res.status(500).json({ message: 'Error communicating with AI Financial Advisor.' });
+  }
+});
+
 export default router;

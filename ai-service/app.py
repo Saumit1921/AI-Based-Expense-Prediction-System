@@ -161,3 +161,75 @@ def generate_insights(payload: ExpensePayload):
         insights.append("Your financial habits look stable this month. Great job sticking to your budget limits!")
 
     return {"insights": insights}
+
+# AI Chatbot Assistant API
+class ChatPayload(BaseModel):
+    expenses: List[ExpenseItem]
+    message: str
+
+@app.post("/chat")
+def chat_assistant(payload: ChatPayload):
+    msg = payload.message.lower()
+    expenses_data = [item.model_dump() for item in payload.expenses]
+    
+    if not expenses_data:
+        return {"response": "I see your ledger is empty! Please log some transactions so I can analyze your financial details."}
+        
+    df = prepare_dataframe(expenses_data)
+    
+    # 1. Analyze Category spending
+    if "food" in msg or "dinner" in msg or "eat" in msg:
+        food_df = df[df["category"] == "Food"]
+        total_food = food_df["amount"].sum()
+        count = len(food_df)
+        total_all = df['amount'].sum()
+        proportion = (total_food / total_all * 100) if total_all > 0 else 0
+        return {
+            "response": f"You have logged {count} food transactions totaling ₹{total_food:,.2f}. This accounts for {proportion:.1f}% of your total recorded spending."
+        }
+        
+    # 2. Can I afford X?
+    elif "afford" in msg or "buy" in msg or "purchase" in msg:
+        import re
+        numbers = re.findall(r'\d+', msg)
+        amount_to_buy = float(numbers[0]) if numbers else 0.0
+        
+        if amount_to_buy == 0:
+            return {"response": "I can tell you if an item is affordable, but please mention the price. E.g. 'Can I afford a laptop for 35000 next month?'"}
+            
+        forecasts = forecast_future(expenses_data, steps=1)
+        next_month_predicted = forecasts[0]["predicted_amount"] if forecasts else df.groupby("year_month")["amount"].sum().mean()
+        
+        income = 80000.0 # Assumed benchmark monthly income
+        savings = income - next_month_predicted
+        
+        if savings >= amount_to_buy:
+            return {
+                "response": f"Based on your AI forecast, your predicted outgo for next month is ₹{next_month_predicted:,.2f}. This leaves a projected saving of ₹{savings:,.2f}. Buying this item (₹{amount_to_buy:,.2f}) is **affordable** and will leave you with a balance of ₹{(savings - amount_to_buy):,.2f} in savings!"
+            }
+        else:
+            deficit = amount_to_buy - savings
+            return {
+                "response": f"Based on your forecast, you are projected to save ₹{savings:,.2f} next month. Buying this item for ₹{amount_to_buy:,.2f} will exceed your predicted monthly savings capacity by **₹{deficit:,.2f}**. I recommend deferring this purchase or reducing variable categories first."
+            }
+            
+    # 3. Request tips or saving strategies
+    elif "tips" in msg or "save" in msg or "budget" in msg:
+        cat_totals = df.groupby("category")["amount"].sum()
+        if cat_totals.empty:
+            return {"response": "Try logging a few more expenses so I can find out your highest spending areas."}
+            
+        highest_cat = cat_totals.idxmax()
+        highest_amount = cat_totals.max()
+        total_all = cat_totals.sum()
+        proportion = (highest_amount / total_all) * 100 if total_all > 0 else 0
+        
+        return {
+            "response": f"Here is my advisor tip: Your highest expenditure category is **{highest_cat}** totaling ₹{highest_amount:,.2f} ({proportion:.1f}% of total). You could save approximately **₹{(highest_amount * 0.20):,.2f}** next month by committing to a 20% spend ceiling constraint in {highest_cat}."
+        }
+        
+    # Default response
+    return {
+        "response": "Hello! I am your SmartExpense AI Financial Advisor. Ask me questions such as:\n\n* *'Can I afford a phone for 12000 next month?'*\n* *'How much did I spend on Food?'*\n* *'Give me tips to save money.'*"
+    }
+

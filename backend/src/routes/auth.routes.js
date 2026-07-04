@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import prisma from '../config/db.js';
 import { protect } from '../middleware/auth.middleware.js';
+import { sendLoginNotification } from '../utils/mailer.js';
 
 const router = express.Router();
 
@@ -42,12 +43,63 @@ router.post('/signup', async (req, res) => {
       },
     });
 
+    // Automatically seed basic budgets for the user
+    const categories = await prisma.category.findMany();
+    const budgetLimits = [
+      { name: 'Food', limit: 12000 },
+      { name: 'Transport', limit: 3000 },
+      { name: 'Shopping', limit: 8000 },
+      { name: 'Entertainment', limit: 5000 },
+      { name: 'Bills', limit: 8000 },
+      { name: 'Rent', limit: 16000 },
+    ];
+    
+    for (const b of budgetLimits) {
+      const cat = categories.find(c => c.category_name === b.name);
+      if (cat) {
+        await prisma.budget.create({
+          data: {
+            user_id: user.user_id,
+            category_id: cat.category_id,
+            monthly_limit: b.limit,
+          }
+        });
+      }
+    }
+
+    // Clone historical expenses from the default Demo user
+    const demoUser = await prisma.user.findUnique({
+      where: { email: 'demo@example.com' },
+    });
+    
+    if (demoUser) {
+      const demoExpenses = await prisma.expense.findMany({
+        where: { user_id: demoUser.user_id },
+      });
+      
+      const expensesToInsert = demoExpenses.map((exp) => ({
+        user_id: user.user_id,
+        category_id: exp.category_id,
+        amount: exp.amount,
+        payment_method: exp.payment_method,
+        description: exp.description,
+        expense_date: exp.expense_date,
+      }));
+
+      const chunkSize = 200;
+      for (let i = 0; i < expensesToInsert.length; i += chunkSize) {
+        await prisma.expense.createMany({
+          data: expensesToInsert.slice(i, i + chunkSize),
+        });
+      }
+    }
+
     // Automatically seed basic notifications for a new user
     await prisma.notification.create({
       data: {
         user_id: user.user_id,
         title: 'Account Created Successfully!',
-        message: `Welcome, ${full_name}! Begin tracking your expenses and set your monthly budgets now.`,
+        message: `Welcome, ${full_name}! Your dashboard is pre-populated with demo history. Start tracking your expenses now!`,
       }
     });
 
@@ -80,6 +132,11 @@ router.post('/login', async (req, res) => {
     });
 
     if (user && (await bcrypt.compare(password, user.password))) {
+      // Trigger email notification async
+      sendLoginNotification(user.full_name, user.email).catch(err => {
+        console.error('Email alert failed:', err);
+      });
+
       res.json({
         user_id: user.user_id,
         full_name: user.full_name,
