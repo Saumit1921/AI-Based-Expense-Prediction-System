@@ -50,8 +50,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               <TrendingUp className="h-6 w-6" />
             </div>
             <div>
-              <span className="font-bold text-lg leading-none block bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">SmartExpense</span>
-              <span className="text-[10px] text-slate-400 font-semibold tracking-wider uppercase">AI Prediction</span>
+              <span className="font-bold text-lg leading-none block bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">Expenix</span>
+              <span className="text-[9px] text-slate-400 font-semibold leading-normal block">Your personal enpense predictor</span>
             </div>
           </div>
 

@@ -45,11 +45,14 @@ export const Signup: React.FC = () => {
 
       <div className="w-full max-w-md relative z-10">
         <div className="flex flex-col items-center mb-8">
-          <Link to="/" className="flex items-center gap-2 mb-4">
-            <div className="p-2.5 bg-gradient-to-tr from-brand-blue to-cyan-500 rounded-xl text-white">
-              <TrendingUp className="h-6 w-6" />
+          <Link to="/" className="flex flex-col items-center mb-4">
+            <div className="flex items-center gap-2">
+              <div className="p-2.5 bg-gradient-to-tr from-brand-blue to-cyan-500 rounded-xl text-white">
+                <TrendingUp className="h-6 w-6" />
+              </div>
+              <span className="font-extrabold text-2xl bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">Expenix</span>
             </div>
-            <span className="font-extrabold text-2xl bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">SmartExpense</span>
+            <span className="text-[10px] text-slate-400 font-semibold mt-1">Your personal enpense predictor</span>
           </Link>
           <h2 className="text-xl font-bold">Create your account</h2>
           <p className="text-slate-400 text-xs mt-1">Get started with AI-driven budget predictions.</p>

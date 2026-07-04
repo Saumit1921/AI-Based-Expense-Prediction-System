@@ -22,7 +22,7 @@ export const DashboardLayout: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       sender: 'ai',
-      text: "Hello! I am your SmartExpense AI Financial Advisor. Ask me anything about your finances, for example:\n\n* *'Can I afford a laptop for 35000 next month?'*\n* *'How much did I spend on Food?'*\n* *'Give me tips to save money.'*"
+      text: "Hello! I am your Expenix AI Financial Advisor. Ask me anything about your finances, for example:\n\n* *'Can I afford a laptop for 35000 next month?'*\n* *'How much did I spend on Food?'*\n* *'Give me tips to save money.'*"
     }
   ]);
 
