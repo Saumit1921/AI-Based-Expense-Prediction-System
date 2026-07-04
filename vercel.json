@@ -5,10 +5,12 @@
       "framework": "vite"
     },
     "backend": {
-      "root": "backend"
+      "root": "backend",
+      "entrypoint": "src/server.js"
     },
     "ai-service": {
-      "root": "ai-service"
+      "root": "ai-service",
+      "entrypoint": "app.py"
     }
   },
   "rewrites": [
