@@ -29,6 +29,14 @@
       }
     },
     {
+      "source": "/((?!api|ai|assets|vite.svg|uploads|logo.png|favicon.ico).*)",
+      "destination": {
+        "type": "service",
+        "service": "frontend",
+        "path": "/index.html"
+      }
+    },
+    {
       "source": "/(.*)",
       "destination": {
         "type": "service",
