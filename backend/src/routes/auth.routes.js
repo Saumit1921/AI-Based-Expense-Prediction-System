@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 import prisma from '../config/db.js';
 import { protect } from '../middleware/auth.middleware.js';
 import { sendLoginNotification } from '../utils/mailer.js';
+import crypto from 'crypto';
 
 const router = express.Router();
 
@@ -78,6 +79,7 @@ router.post('/signup', async (req, res) => {
       });
       
       const expensesToInsert = demoExpenses.map((exp) => ({
+        expense_id: crypto.randomUUID(),
         user_id: user.user_id,
         category_id: exp.category_id,
         amount: exp.amount,
