@@ -28,7 +28,7 @@ models/*.pkl
 models/*.h5
 
 # Prisma and database
-dev.db
+# dev.db
 dev.db-journal
 *.log
 uploads/receipts/*
