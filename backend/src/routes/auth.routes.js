@@ -45,7 +45,28 @@ router.post('/signup', async (req, res) => {
     });
 
     // Automatically seed basic budgets for the user
-    const categories = await prisma.category.findMany();
+    let categories = await prisma.category.findMany();
+    if (categories.length === 0) {
+      const defaultCategories = [
+        { category_name: 'Food', icon: 'Utensils', color: '#EF4444' },
+        { category_name: 'Transport', icon: 'Car', color: '#3B82F6' },
+        { category_name: 'Shopping', icon: 'ShoppingBag', color: '#10B981' },
+        { category_name: 'Entertainment', icon: 'Tv', color: '#F59E0B' },
+        { category_name: 'Utilities', icon: 'Zap', color: '#8B5CF6' },
+        { category_name: 'Health', icon: 'Heart', color: '#EC4899' },
+        { category_name: 'Education', icon: 'GraduationCap', color: '#6366F1' },
+        { category_name: 'Bills', icon: 'FileText', color: '#6B7280' },
+        { category_name: 'Rent', icon: 'Home', color: '#14B8A6' },
+        { category_name: 'Salary', icon: 'DollarSign', color: '#22C55E' },
+        { category_name: 'Investments', icon: 'TrendingUp', color: '#06B6D4' },
+        { category_name: 'Others', icon: 'HelpCircle', color: '#94A3B8' }
+      ];
+      
+      await prisma.category.createMany({
+        data: defaultCategories
+      });
+      categories = await prisma.category.findMany();
+    }
     const budgetLimits = [
       { name: 'Food', limit: 12000 },
       { name: 'Transport', limit: 3000 },
