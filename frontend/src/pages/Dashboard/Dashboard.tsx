@@ -9,6 +9,8 @@ import {
   AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell
 } from 'recharts';
+import { AIFinancialAssistant } from '../../components/AIFinancialAssistant/AIFinancialAssistant';
+
 
 interface KPIState {
   total_spent: number;
@@ -69,6 +71,7 @@ export const Dashboard: React.FC = () => {
   const [recentExpenses, setRecentExpenses] = useState<Expense[]>([]);
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [categories, setCategories] = useState<Category[]>([]);
+  const [budgets, setBudgets] = useState<any[]>([]);
   
   // Modals & form state
   const [addModalOpen, setAddModalOpen] = useState<boolean>(false);
@@ -104,10 +107,11 @@ export const Dashboard: React.FC = () => {
       const budgetsRes = await fetch('/api/budgets', {
         headers: { Authorization: `Bearer ${token}` },
       });
-      const budgets = await budgetsRes.json();
+      const budgetsData = await budgetsRes.json();
+      setBudgets(budgetsData || []);
       
       // Calculate Limits
-      const totalLimit = budgets.reduce((sum: number, b: any) => sum + b.monthly_limit, 0) || 50000;
+      const totalLimit = (budgetsData || []).reduce((sum: number, b: any) => sum + b.monthly_limit, 0) || 50000;
       const spentThisMonth = summary.total_spent || 0;
       const remBudget = Math.max(0, totalLimit - spentThisMonth);
       const utilRate = totalLimit > 0 ? (spentThisMonth / totalLimit) * 100 : 0;
@@ -546,7 +550,17 @@ export const Dashboard: React.FC = () => {
             ))}
           </div>
         </div>
+      </div>
 
+      {/* AI Financial Copilot Panel */}
+      <div className="mb-6">
+        <AIFinancialAssistant
+          token={token}
+          kpis={kpis}
+          categoryData={categoryData}
+          budgets={budgets}
+          recentExpenses={recentExpenses}
+        />
       </div>
 
       {/* Transactions & Alerts bottom row */}
