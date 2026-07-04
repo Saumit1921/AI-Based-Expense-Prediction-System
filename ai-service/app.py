@@ -230,6 +230,6 @@ def chat_assistant(payload: ChatPayload):
         
     # Default response
     return {
-        "response": "Hello! I am your SmartExpense AI Financial Advisor. Ask me questions such as:\n\n* *'Can I afford a phone for 12000 next month?'*\n* *'How much did I spend on Food?'*\n* *'Give me tips to save money.'*"
+        "response": "Hello! I am your Expenix AI Financial Advisor. Ask me questions such as:\n\n* *'Can I afford a phone for 12000 next month?'*\n* *'How much did I spend on Food?'*\n* *'Give me tips to save money.'*"
     }
 

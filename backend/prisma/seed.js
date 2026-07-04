@@ -159,7 +159,7 @@ async function main() {
     data: [
       {
         user_id: demoUser.user_id,
-        title: 'Welcome to SmartExpense!',
+        title: 'Welcome to Expenix!',
         message: 'Your demo account is fully set up with 14 months of transaction records. Check the AI Prediction page to train your first forecasting model!',
         read_status: false,
       },

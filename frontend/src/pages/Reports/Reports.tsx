@@ -121,7 +121,7 @@ export const Reports: React.FC = () => {
           {/* Print specific header */}
           <div className="hidden print:flex justify-between items-center border-b pb-4 mb-6">
             <div>
-              <h2 className="text-2xl font-bold">SmartExpense Ledger Audit</h2>
+              <h2 className="text-2xl font-bold">Expenix Ledger Audit</h2>
               <p className="text-xs text-slate-500">Target Range: {new Date(summary.start_date).toLocaleDateString()} to {new Date(summary.end_date).toLocaleDateString()}</p>
             </div>
             <span className="text-xs text-slate-400 uppercase tracking-widest font-bold">Financial Summary Report</span>

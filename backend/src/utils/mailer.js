@@ -27,7 +27,7 @@ export const sendLoginNotification = async (fullName, email) => {
   const subject = `User Login Notification: ${fullName} has logged in`;
   const htmlContent = `
     <div style="font-family: sans-serif; padding: 20px; color: #334155; border: 1px solid #e2e8f0; border-radius: 12px; max-width: 500px;">
-      <h2 style="color: #2563EB; margin-top: 0;">SmartExpense Security Alert</h2>
+      <h2 style="color: #2563EB; margin-top: 0;">Expenix Security Alert</h2>
       <p style="font-size: 14px;">An account login has been registered on the platform.</p>
       <hr style="border: 0; border-top: 1px solid #f1f5f9; margin: 15px 0;" />
       <p><b>User Name:</b> ${fullName}</p>
@@ -42,7 +42,7 @@ export const sendLoginNotification = async (fullName, email) => {
 
   if (transporter) {
     try {
-      const from = process.env.SMTP_FROM || '"SmartExpense System" <noreply@smartexpense.com>';
+      const from = process.env.SMTP_FROM || '"Expenix System" <noreply@expenix.com>';
       await transporter.sendMail({
         from,
         to: targetEmail,

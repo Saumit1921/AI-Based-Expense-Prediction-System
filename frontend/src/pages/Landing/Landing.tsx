@@ -37,7 +37,7 @@ export const Landing: React.FC = () => {
           Predict your spending before it <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">actually happens.</span>
         </h1>
         <p className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-          SmartExpense analyzes your historical ledger patterns to project future outlays, warn you of budget overrides, and provide smart financial recommendations.
+          Expenix analyzes your historical ledger patterns to project future outlays, warn you of budget overrides, and provide smart financial recommendations.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/signup" className="flex items-center gap-2 bg-brand-blue hover:bg-blue-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-blue-500/25 transition-all group">
@@ -110,7 +110,7 @@ export const Landing: React.FC = () => {
 
       {/* Footer */}
       <footer className="relative z-10 max-w-7xl mx-auto px-6 py-12 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-sm">
-        <p>&copy; 2026 SmartExpense AI prediction Platform. All rights reserved.</p>
+        <p>&copy; 2026 Expenix AI prediction Platform. All rights reserved.</p>
         <div className="flex gap-6 mt-4 sm:mt-0">
           <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
