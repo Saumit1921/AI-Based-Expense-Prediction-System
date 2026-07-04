@@ -1,64 +1,37 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
+  "services": {
+    "frontend": {
+      "root": "frontend",
+      "framework": "vite"
     },
-    {
-      "src": "backend/src/app.js",
-      "use": "@vercel/node"
+    "backend": {
+      "root": "backend"
     },
-    {
-      "src": "ai-service/app.py",
-      "use": "@vercel/python"
+    "ai-service": {
+      "root": "ai-service"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/api/predictions/(.*)",
-      "dest": "backend/src/app.js"
+      "source": "/ai(/.*)?",
+      "destination": {
+        "type": "service",
+        "service": "ai-service"
+      }
     },
     {
-      "src": "/api/auth/(.*)",
-      "dest": "backend/src/app.js"
+      "source": "/api(/.*)?",
+      "destination": {
+        "type": "service",
+        "service": "backend"
+      }
     },
     {
-      "src": "/api/expenses/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/api/categories/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/api/budgets/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/api/notifications/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/api/reports/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/api/admin/(.*)",
-      "dest": "backend/src/app.js"
-    },
-    {
-      "src": "/ai/(.*)",
-      "dest": "ai-service/app.py"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "frontend/dist/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/dist/$1"
+      "source": "/(.*)",
+      "destination": {
+        "type": "service",
+        "service": "frontend"
+      }
     }
   ]
 }
