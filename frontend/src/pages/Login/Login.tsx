@@ -55,7 +55,7 @@ export const Login: React.FC = () => {
               </div>
               <span className="font-extrabold text-2xl bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">Expenix</span>
             </div>
-            <span className="text-[10px] text-slate-400 font-semibold mt-1">Your personal enpense predictor</span>
+            <span className="text-[10px] text-slate-400 font-semibold mt-1">Your Personal Expense Predictor</span>
           </Link>
           <h2 className="text-xl font-bold">Welcome back</h2>
           <p className="text-slate-400 text-xs mt-1">Please enter your credentials to access your ledger.</p>

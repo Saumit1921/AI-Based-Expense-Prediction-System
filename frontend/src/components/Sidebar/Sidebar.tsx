@@ -51,7 +51,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
             </div>
             <div>
               <span className="font-bold text-lg leading-none block bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">Expenix</span>
-              <span className="text-[9px] text-slate-400 font-semibold leading-normal block">Your personal enpense predictor</span>
+              <span className="text-[9px] text-slate-400 font-semibold leading-normal block">Your Personal Expense Predictor</span>
             </div>
           </div>
 

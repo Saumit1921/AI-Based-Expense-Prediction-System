@@ -20,7 +20,7 @@ export const Landing: React.FC = () => {
             </div>
             <span className="font-bold text-xl leading-none bg-gradient-to-r from-brand-blue to-brand-emerald bg-clip-text text-transparent">Expenix</span>
           </div>
-          <span className="text-[10px] text-slate-400 font-semibold mt-1">Your personal enpense predictor</span>
+          <span className="text-[10px] text-slate-400 font-semibold mt-1">Your Personal Expense Predictor</span>
         </div>
         <div className="flex items-center gap-4">
           <Link to="/login" className="text-sm font-semibold hover:text-brand-emerald transition-colors">Sign In</Link>
