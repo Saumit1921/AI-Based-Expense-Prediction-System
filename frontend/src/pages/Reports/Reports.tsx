@@ -29,7 +29,7 @@ export const Reports: React.FC = () => {
     if (!token) return;
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/reports/summary?filter_preset=${preset}`, {
+      const res = await fetch(`/api/reports/summary?filter_preset=${preset}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -49,7 +49,7 @@ export const Reports: React.FC = () => {
 
   const handleCsvDownload = () => {
     // Directly stream down from backend endpoint
-    const url = `http://localhost:5000/api/reports/export/csv?filter_preset=${preset}&token=${token}`;
+    const url = `/api/reports/export/csv?filter_preset=${preset}&token=${token}`;
     // Fetch with auth header and download
     fetch(url, {
       headers: { Authorization: `Bearer ${token}` }

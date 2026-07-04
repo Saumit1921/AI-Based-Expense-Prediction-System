@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ sidebarOpen, setSidebarOpen, tit
   const fetchNotifications = async () => {
     if (!token) return;
     try {
-      const res = await fetch('http://localhost:5000/api/notifications', {
+      const res = await fetch('/api/notifications', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -74,7 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({ sidebarOpen, setSidebarOpen, tit
 
   const markAsRead = async (id: string) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/notifications/${id}/read`, {
+      const res = await fetch(`/api/notifications/${id}/read`, {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -90,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({ sidebarOpen, setSidebarOpen, tit
 
   const markAllAsRead = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/notifications/read-all`, {
+      const res = await fetch(`/api/notifications/read-all`, {
         method: 'PUT',
         headers: { Authorization: `Bearer ${token}` },
       });

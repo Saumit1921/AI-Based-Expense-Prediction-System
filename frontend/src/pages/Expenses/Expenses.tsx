@@ -31,7 +31,7 @@ export const Expenses: React.FC = () => {
     if (!token) return;
     setLoading(true);
     try {
-      let url = `http://localhost:5000/api/expenses?filter_preset=${filterPreset}`;
+      let url = `/api/expenses?filter_preset=${filterPreset}`;
       
       if (searchText) url += `&search=${encodeURIComponent(searchText)}`;
       if (paymentMethod) url += `&payment_method=${paymentMethod}`;
@@ -69,7 +69,7 @@ export const Expenses: React.FC = () => {
     if (!window.confirm('Are you sure you want to delete this expense record?')) return;
     
     try {
-      const res = await fetch(`http://localhost:5000/api/expenses/${id}`, {
+      const res = await fetch(`/api/expenses/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });

@@ -42,7 +42,7 @@ export const Budgets: React.FC = () => {
     if (!token) return;
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/budgets', {
+      const res = await fetch('/api/budgets', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -58,7 +58,7 @@ export const Budgets: React.FC = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/categories', {
+      const res = await fetch('/api/categories', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -88,7 +88,7 @@ export const Budgets: React.FC = () => {
     setError('');
     setSuccess('');
     try {
-      const res = await fetch('http://localhost:5000/api/budgets', {
+      const res = await fetch('/api/budgets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -121,7 +121,7 @@ export const Budgets: React.FC = () => {
   const handleDeleteBudget = async (id: string) => {
     if (!window.confirm('Remove this budget threshold constraint?')) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/budgets/${id}`, {
+      const res = await fetch(`/api/budgets/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });

@@ -38,13 +38,13 @@ export const Admin: React.FC = () => {
     setLoading(true);
     try {
       // 1. Fetch Admin analytics
-      const analyticsRes = await fetch('http://localhost:5000/api/admin/analytics', {
+      const analyticsRes = await fetch('/api/admin/analytics', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const analyticsData = await analyticsRes.json();
 
       // 2. Fetch Users lists
-      const usersRes = await fetch('http://localhost:5000/api/admin/users', {
+      const usersRes = await fetch('/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const usersData = await usersRes.json();
@@ -72,7 +72,7 @@ export const Admin: React.FC = () => {
     if (!window.confirm(`Switch this user's access rights to ${nextRole}?`)) return;
     
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/users/${id}/role`, {
+      const res = await fetch(`/api/admin/users/${id}/role`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ export const Admin: React.FC = () => {
     if (!window.confirm('WARNING: Deleting this user will purge all of their budget records and expense histories. Proceed?')) return;
     
     try {
-      const res = await fetch(`http://localhost:5000/api/admin/users/${id}`, {
+      const res = await fetch(`/api/admin/users/${id}`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });

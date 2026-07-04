@@ -23,7 +23,7 @@ export const Analytics: React.FC = () => {
     if (!token) return;
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/reports/summary?filter_preset=${preset}`, {
+      const res = await fetch(`/api/reports/summary?filter_preset=${preset}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {

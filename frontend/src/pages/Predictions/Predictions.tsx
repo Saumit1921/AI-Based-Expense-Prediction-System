@@ -42,13 +42,13 @@ export const Predictions: React.FC = () => {
     try {
       // 1. Fetch AI predictions
       // If none saved, user will trigger training
-      const res = await fetch('http://localhost:5000/api/predictions', {
+      const res = await fetch('/api/predictions', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const savedPreds = await res.json();
       
       // Fetch insights
-      const insightsRes = await fetch('http://localhost:5000/api/predictions/insights', {
+      const insightsRes = await fetch('/api/predictions/insights', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const insightsData = await insightsRes.json();
@@ -76,7 +76,7 @@ export const Predictions: React.FC = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/predictions/trigger', {
+      const res = await fetch('/api/predictions/trigger', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -105,7 +105,7 @@ export const Predictions: React.FC = () => {
       setChartData(plotPoints);
 
       // Refetch insights
-      const insightsRes = await fetch('http://localhost:5000/api/predictions/insights', {
+      const insightsRes = await fetch('/api/predictions/insights', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const insightsData = await insightsRes.json();

@@ -66,7 +66,7 @@ export const DashboardLayout: React.FC = () => {
     setSending(true);
 
     try {
-      const res = await fetch('http://localhost:5000/api/predictions/chat', {
+      const res = await fetch('/api/predictions/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

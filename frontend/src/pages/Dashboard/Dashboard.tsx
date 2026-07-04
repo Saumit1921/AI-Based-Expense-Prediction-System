@@ -89,19 +89,19 @@ export const Dashboard: React.FC = () => {
     if (!token) return;
     try {
       // 1. Fetch Report Summary
-      const summaryRes = await fetch('http://localhost:5000/api/reports/summary?filter_preset=month', {
+      const summaryRes = await fetch('/api/reports/summary?filter_preset=month', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const summary = await summaryRes.json();
 
       // 2. Fetch Expenses list
-      const expensesRes = await fetch('http://localhost:5000/api/expenses?limit=6', {
+      const expensesRes = await fetch('/api/expenses?limit=6', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const expensesData = await expensesRes.json();
 
       // 3. Fetch Budgets list to compute totals
-      const budgetsRes = await fetch('http://localhost:5000/api/budgets', {
+      const budgetsRes = await fetch('/api/budgets', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const budgets = await budgetsRes.json();
@@ -115,7 +115,7 @@ export const Dashboard: React.FC = () => {
       // 4. Fetch Saved Predictions or AI trigger
       let nextMonthPrediction = 0;
       try {
-        const predRes = await fetch('http://localhost:5000/api/predictions', {
+        const predRes = await fetch('/api/predictions', {
           headers: { Authorization: `Bearer ${token}` },
         });
         const predictions = await predRes.json();
@@ -127,7 +127,7 @@ export const Dashboard: React.FC = () => {
       }
 
       // 5. Fetch Notifications
-      const notifRes = await fetch('http://localhost:5000/api/notifications', {
+      const notifRes = await fetch('/api/notifications', {
         headers: { Authorization: `Bearer ${token}` },
       });
       const notifs = await notifRes.json();
@@ -178,7 +178,7 @@ export const Dashboard: React.FC = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/categories', {
+      const res = await fetch('/api/categories', {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.ok) {
@@ -264,7 +264,7 @@ export const Dashboard: React.FC = () => {
     formData.append('receipt', file);
 
     try {
-      const res = await fetch('http://localhost:5000/api/expenses/upload-receipt', {
+      const res = await fetch('/api/expenses/upload-receipt', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
         body: formData,
@@ -302,7 +302,7 @@ export const Dashboard: React.FC = () => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/expenses', {
+      const res = await fetch('/api/expenses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
