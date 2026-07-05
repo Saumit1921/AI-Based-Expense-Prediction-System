@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import { Search, Calendar, CreditCard, Trash2 } from 'lucide-react';
+import { Search, Calendar, CreditCard, Trash2, Tag } from 'lucide-react';
 
 interface Expense {
   expense_id: string;
@@ -18,6 +18,8 @@ interface Expense {
 export const Expenses: React.FC = () => {
   const { token } = useAuth();
   const [expenses, setExpenses] = useState<Expense[]>([]);
+  const [categories, setCategories] = useState<any[]>([]);
+  const [categoryId, setCategoryId] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(true);
   
   // Search & Filters states
@@ -35,6 +37,7 @@ export const Expenses: React.FC = () => {
       
       if (searchText) url += `&search=${encodeURIComponent(searchText)}`;
       if (paymentMethod) url += `&payment_method=${paymentMethod}`;
+      if (categoryId) url += `&category_id=${categoryId}`;
       
       if (filterPreset === 'custom') {
         if (startDate) url += `&start_date=${startDate}`;
@@ -56,9 +59,37 @@ export const Expenses: React.FC = () => {
     }
   };
 
+  const fetchCategories = async () => {
+    if (!token) return;
+    try {
+      const res = await fetch('/api/categories', {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setCategories(data || []);
+      }
+    } catch (err) {
+      console.error('Error fetching categories:', err);
+    }
+  };
+
+  useEffect(() => {
+    if (token) {
+      fetchCategories();
+    }
+  }, [token]);
+
   useEffect(() => {
     fetchExpenses();
-  }, [token, filterPreset, paymentMethod]);
+    
+    // Auto-refresh interval (10 seconds) to increase the refresh rate of the app
+    const interval = setInterval(() => {
+      fetchExpenses();
+    }, 10000);
+    
+    return () => clearInterval(interval);
+  }, [token, filterPreset, paymentMethod, categoryId]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -134,6 +165,23 @@ export const Expenses: React.FC = () => {
                 <option value="Debit Card">Debit Card</option>
                 <option value="UPI">UPI</option>
                 <option value="Net Banking">Net Banking</option>
+              </select>
+            </div>
+
+            {/* Category filter */}
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-400">
+              <Tag className="h-4 w-4" />
+              <select
+                value={categoryId}
+                onChange={(e) => setCategoryId(e.target.value)}
+                className="bg-transparent border-none outline-none text-slate-800 dark:text-slate-200 font-bold"
+              >
+                <option value="">All Categories</option>
+                {categories.map((cat) => (
+                  <option key={cat.category_id} value={cat.category_id}>
+                    {cat.category_name}
+                  </option>
+                ))}
               </select>
             </div>
 

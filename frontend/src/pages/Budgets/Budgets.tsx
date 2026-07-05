@@ -75,6 +75,13 @@ export const Budgets: React.FC = () => {
     if (token) {
       fetchBudgets();
       fetchCategories();
+      
+      // Auto-refresh budgets every 10 seconds to increase refresh rate
+      const interval = setInterval(() => {
+        fetchBudgets();
+      }, 10000);
+      
+      return () => clearInterval(interval);
     }
   }, [token]);
 

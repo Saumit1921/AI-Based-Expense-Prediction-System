@@ -199,6 +199,13 @@ export const Dashboard: React.FC = () => {
     if (token) {
       fetchDashboardData();
       fetchCategories();
+      
+      // Auto-refresh the dashboard data every 10 seconds to increase refresh rate
+      const interval = setInterval(() => {
+        fetchDashboardData();
+      }, 10000);
+      
+      return () => clearInterval(interval);
     }
   }, [token]);
 
