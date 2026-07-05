@@ -12,7 +12,6 @@ import { Expenses } from './pages/Expenses/Expenses';
 import { Budgets } from './pages/Budgets/Budgets';
 import { Predictions } from './pages/Predictions/Predictions';
 import { Reports } from './pages/Reports/Reports';
-import { ReportsShare } from './pages/Reports/ReportsShare';
 import { Analytics } from './pages/Analytics/Analytics';
 import { Profile } from './pages/Profile/Profile';
 import { Admin } from './pages/Admin/Admin';
@@ -28,7 +27,6 @@ export const App: React.FC = () => {
           <Route path="/" element={<Landing />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/reports/share" element={<ReportsShare />} />
 
           {/* Secure Routing Layout */}
           <Route element={<DashboardLayout />}>

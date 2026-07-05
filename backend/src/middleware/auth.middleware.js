@@ -8,13 +8,9 @@ export const protect = async (req, res, next) => {
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
   ) {
-    token = req.headers.authorization.split(' ')[1];
-  } else if (req.query.token) {
-    token = req.query.token;
-  }
-
-  if (token) {
     try {
+      token = req.headers.authorization.split(' ')[1];
+
       // Decode token
       const decoded = jwt.verify(token, process.env.JWT_SECRET || 'super_secret_jwt_token_key_123456');
 
@@ -40,7 +36,9 @@ export const protect = async (req, res, next) => {
       console.error('Token verification error:', error);
       return res.status(401).json({ message: 'Not authorized, token failed.' });
     }
-  } else {
+  }
+
+  if (!token) {
     return res.status(401).json({ message: 'Not authorized, no token.' });
   }
 };
